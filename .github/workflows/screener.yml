@@ -2,10 +2,10 @@ name: 20-20 Club Screener
 
 on:
   schedule:
-    - cron: '0 0 15 4 *'   # 4월 15일 09:00 KST (= 00:00 UTC)
-    - cron: '0 0 15 7 *'   # 7월 15일 09:00 KST
-    - cron: '0 0 15 10 *'  # 10월 15일 09:00 KST
-    - cron: '0 0 15 1 *'   # 1월 15일 09:00 KST
+    - cron: '0 0 16 4 *'   # 4월 16일 09:00 KST (= 00:00 UTC)
+    - cron: '0 0 16 6 *'   # 6월 16일 09:00 KST
+    - cron: '0 0 16 9 *'   # 9월 16일 09:00 KST
+    - cron: '0 0 16 12 *'  # 12월 16일 09:00 KST
   workflow_dispatch:         # 수동 실행 (GitHub UI에서 테스트 가능)
 
 jobs:
