@@ -4,6 +4,7 @@
 데이터 출처: 금융감독원 전자공시시스템(DART)
 """
 
+import json
 import logging
 import sys
 from datetime import datetime
@@ -23,6 +24,20 @@ logging.basicConfig(
     ],
 )
 logger = logging.getLogger(__name__)
+
+
+def _save_2020_club_cache(result_df, bsns_year):
+    """분기 스크리닝 결과를 JSON 캐시로 저장 (일일 신호 스캐너가 참조)."""
+    Path("data").mkdir(exist_ok=True)
+    codes = result_df["stock_code"].astype(str).str.zfill(6).tolist()
+    cache = {
+        "updated_at": datetime.now().strftime("%Y-%m-%d"),
+        "bsns_year": bsns_year,
+        "kr_stock_codes": codes,
+    }
+    with open("data/2020_club.json", "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+    logger.info(f"20-20 Club 캐시 저장 완료: {len(codes)}개 → data/2020_club.json")
 
 
 def main():
@@ -73,6 +88,8 @@ def main():
 
     logger.info("[6/7] S&P 500 스크리닝 (미국 시장)")
     us_result_df = screen_sp500()
+
+    _save_2020_club_cache(result_df, bsns_year)
 
     logger.info("[7/7] 이메일 작성 및 발송")
     html_body = build_html_email(result_df, bsns_year, us_result_df=us_result_df)

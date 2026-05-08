@@ -8,6 +8,9 @@ on:
     - cron: '0 0 16 12 *'  # 12월 16일 09:00 KST
   workflow_dispatch:         # 수동 실행 (GitHub UI에서 테스트 가능)
 
+permissions:
+  contents: write            # 20-20 Club 캐시 파일 커밋을 위해 필요
+
 jobs:
   screener:
     runs-on: ubuntu-latest
@@ -33,3 +36,13 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
         run: python main.py
+
+      - name: Commit 20-20 Club cache
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/2020_club.json
+          git diff --staged --quiet || (
+            git commit -m "chore: update 20-20 Club cache [skip ci]" &&
+            git push
+          )
