@@ -176,7 +176,7 @@ def build_signal_email(signals: dict) -> str:
     sec_a = _section(
         "A. Bandwidth15%이하, 상단터치",
         "볼린저밴드 20일 | 밴드폭(Band Width) ≤ 15% 상태에서 종가가 상단선 터치 또는 상방 돌파",
-        "밴드폭 = (상단선 − 하단선) ÷ 중심선 × 100% &nbsp;|&nbsp; 기준: 일봉 · 2σ",
+        "밴드폭 = (상단선 − 하단선) ÷ 중심선 × 100% &nbsp;|&nbsp; 기준: 일봉 · 2σ &nbsp;|&nbsp; 거래정지·스팩 제외",
         "#c62828", thead_a, _rows_a(signals["A"]), count_a,
     )
 
@@ -190,8 +190,8 @@ def build_signal_email(signals: dict) -> str:
     )
     sec_b = _section(
         "B. 포카라 80일 BB, 하방터치",
-        "볼린저밴드 80일 | 종가가 하단선에 터치 또는 하방 돌파",
-        "하단선 = 80일 이동평균 − 2σ &nbsp;|&nbsp; 기준: 일봉",
+        "볼린저밴드 80일 | 종가 ≤ 하단선 (저가매수 관점 — 80일 기준 과매도 구간 진입)",
+        "하단선 = 80일 이동평균 − 2σ &nbsp;|&nbsp; 기준: 일봉 &nbsp;|&nbsp; 거래정지·스팩 제외",
         "#1565c0", thead_b, _rows_b(signals["B"]), count_b,
     )
 

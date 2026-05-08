@@ -93,7 +93,7 @@ def _macd_hist_last3(close: pd.Series, fast: int = 12, slow: int = 26, signal: i
 # ---------------------------------------------------------------------------
 
 def _fetch(code: str, start_date: str):
-    """FDR 일봉 OHLCV 수집. 실패 또는 데이터 부족 시 None."""
+    """FDR 일봉 OHLCV 수집. 실패·데이터 부족·거래정지 종목은 None."""
     try:
         df = fdr.DataReader(code, start=start_date)
         if df is None or df.empty:
@@ -102,7 +102,18 @@ def _fetch(code: str, start_date: str):
         if "Close" not in df.columns:
             return None
         df = df[df["Close"] > 0].dropna(subset=["Close"])
-        return df if len(df) >= 25 else None
+        if len(df) < 25:
+            return None
+
+        # 거래정지·상장폐지: 최근 5거래일 거래량 합계 = 0
+        if "Volume" in df.columns and df["Volume"].tail(5).sum() == 0:
+            return None
+
+        # 거래정지: 최근 20거래일 종가 변동 없음 (표준편차 = 0)
+        if df["Close"].tail(20).std() == 0:
+            return None
+
+        return df
     except Exception:
         return None
 
@@ -166,7 +177,7 @@ def _check_signals(code: str, name: str, market: str, df: pd.DataFrame) -> dict:
 # ---------------------------------------------------------------------------
 
 def _get_stock_list() -> pd.DataFrame:
-    """FDR에서 KOSPI + KOSDAQ 종목 목록 반환 (Code, Name, Market)."""
+    """FDR에서 KOSPI + KOSDAQ 종목 목록 반환 (Code, Name, Market). 스팩 제외."""
     kospi = fdr.StockListing("KOSPI")[["Code", "Name"]].copy()
     kospi["Market"] = "KOSPI"
     kosdaq = fdr.StockListing("KOSDAQ")[["Code", "Name"]].copy()
@@ -174,7 +185,11 @@ def _get_stock_list() -> pd.DataFrame:
     df = pd.concat([kospi, kosdaq], ignore_index=True)
     df["Code"] = df["Code"].astype(str).str.zfill(6)
     df["Name"] = df["Name"].fillna("(이름 없음)")
-    return df.drop_duplicates(subset=["Code"])
+    df = df.drop_duplicates(subset=["Code"])
+
+    # 스팩(SPAC) 제외: 종목명에 "스팩" 포함
+    df = df[~df["Name"].str.contains("스팩", na=False)]
+    return df.reset_index(drop=True)
 
 
 def _load_club_codes():
