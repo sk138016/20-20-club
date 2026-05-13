@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>20-20 Club Dashboard</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", sans-serif; background: #f0f2f5; color: #222; }
+#layout { display: flex; min-height: 100vh; }
+
+/* ── Sidebar ── */
+#sidebar {
+  width: 210px; min-width: 210px;
+  background: #1a2035; color: #cdd6f4;
+  display: flex; flex-direction: column;
+  padding: 0;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.18);
+  position: sticky; top: 0; height: 100vh;
+}
+.sidebar-logo {
+  padding: 22px 20px 20px;
+  font-size: 17px; font-weight: 800; letter-spacing: -0.5px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  color: #fff;
+}
+.sidebar-logo .highlight { color: #f9a825; }
+.sidebar-subtitle {
+  font-size: 10px; font-weight: 400; color: #7986a8;
+  margin-top: 3px; letter-spacing: 0.5px;
+}
+.nav-section { padding: 18px 0 8px; }
+.nav-label {
+  font-size: 10px; font-weight: 700; color: #4a5578;
+  padding: 0 20px 8px; letter-spacing: 1px; text-transform: uppercase;
+}
+.nav-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 11px 20px;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  transition: all 0.15s;
+  font-size: 13.5px; color: #9aa5c4;
+  user-select: none;
+}
+.nav-item:hover { background: rgba(255,255,255,0.05); color: #e2e8f0; }
+.nav-item.active {
+  border-left-color: #f9a825;
+  background: rgba(249,168,37,0.1);
+  color: #fbbf24; font-weight: 600;
+}
+.nav-item .icon { font-size: 15px; }
+
+/* ── Main ── */
+#main { flex: 1; padding: 28px 32px; overflow-x: auto; }
+.page { display: none; }
+.page.active { display: block; }
+
+/* ── Page header ── */
+.page-header {
+  display: flex; align-items: center; gap: 16px;
+  margin-bottom: 20px; flex-wrap: wrap;
+}
+.page-title { font-size: 19px; font-weight: 800; color: #1a2035; }
+.date-selector {
+  display: flex; align-items: center; gap: 8px;
+  margin-left: auto;
+}
+.date-selector label { font-size: 12px; color: #666; font-weight: 500; }
+select {
+  border: 1px solid #d1d5db; border-radius: 7px;
+  padding: 6px 12px; font-size: 12.5px;
+  background: white; cursor: pointer; color: #333;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+select:focus { outline: none; border-color: #1a2035; }
+
+/* ── Meta info ── */
+.meta-info {
+  font-size: 12px; color: #888; margin-bottom: 14px;
+  padding: 8px 14px; background: white; border-radius: 7px;
+  border: 1px solid #e5e7eb;
+  display: inline-flex; gap: 16px; flex-wrap: wrap;
+}
+.meta-item { display: flex; align-items: center; gap: 5px; }
+.meta-item .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #f9a825; display: inline-block;
+}
+
+/* ── Section ── */
+.section { margin-bottom: 28px; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.section-header {
+  padding: 11px 18px;
+  color: white; font-weight: 700;
+  font-size: 13.5px;
+  display: flex; align-items: center; gap: 8px;
+}
+.section-header .count {
+  margin-left: auto; font-size: 12px; font-weight: 400;
+  background: rgba(255,255,255,0.18); padding: 1px 8px; border-radius: 10px;
+}
+.hdr-kr  { background: linear-gradient(135deg, #1a2035 0%, #2d3561 100%); }
+.hdr-us  { background: linear-gradient(135deg, #b71c1c 0%, #e53935 100%); }
+.hdr-a   { background: linear-gradient(135deg, #0d47a1 0%, #1976d2 100%); }
+.hdr-b   { background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%); }
+.hdr-c   { background: linear-gradient(135deg, #1b5e20 0%, #388e3c 100%); }
+
+/* ── Table ── */
+.table-wrap { background: white; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th {
+  background: #f8fafc; padding: 9px 14px;
+  text-align: left; font-weight: 600; color: #475569;
+  font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.4px;
+  border-bottom: 1px solid #e5e7eb; white-space: nowrap;
+}
+th.r { text-align: right; }
+th.c { text-align: center; }
+td { padding: 9px 14px; border-bottom: 1px solid #f1f5f9; white-space: nowrap; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #fafbff; }
+
+td.r { text-align: right; }
+td.c { text-align: center; }
+td.code { font-family: "Consolas", "Monaco", monospace; font-size: 12px; color: #555; }
+.v-red  { font-weight: 700; color: #c62828; }
+.v-grn  { font-weight: 700; color: #2e7d32; }
+.v-org  { font-weight: 700; color: #e65100; }
+.v-muted { color: #bbb; }
+
+/* ── Badges ── */
+.badge {
+  display: inline-block; padding: 1px 7px; border-radius: 10px;
+  font-size: 10px; font-weight: 700; vertical-align: middle;
+}
+.b-kospi  { background: #1a73e8; color: white; }
+.b-kosdaq { background: #34a853; color: white; }
+.b-growth { background: #f9a825; color: white; margin-left: 5px; }
+.b-star   { background: #c62828; color: white; margin-left: 5px; }
+.b-us     { background: #c62828; color: white; }
+
+/* ── Growth row ── */
+.r-growth td { background: #fffde7 !important; }
+tr.r-growth:hover td { background: #fff9c4 !important; }
+tr.r-growth td:first-child { border-left: 3px solid #f9a825; padding-left: 11px; }
+
+/* ── Status messages ── */
+.msg { padding: 52px 24px; text-align: center; color: #9aa; font-size: 14px; background: white; }
+.msg.err { color: #c62828; }
+.msg .hint { font-size: 12px; color: #bbb; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div id="layout">
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <div class="sidebar-logo">
+      20<span class="highlight">-</span>20 Club
+      <div class="sidebar-subtitle">STOCK SCREENER</div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">메뉴</div>
+      <div class="nav-item active" data-tab="club">
+        <span class="icon">📊</span> 20-20 Club
+      </div>
+      <div class="nav-item" data-tab="signals">
+        <span class="icon">📈</span> 기술적 신호
+      </div>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div id="main">
+
+    <!-- 20-20 Club page -->
+    <div id="page-club" class="page active">
+      <div class="page-header">
+        <div class="page-title">📊 20-20 Club</div>
+        <div class="date-selector">
+          <label>분기 선택:</label>
+          <select id="club-date-select"><option>불러오는 중...</option></select>
+        </div>
+      </div>
+      <div id="club-content"><div class="msg">데이터 로딩 중...</div></div>
+    </div>
+
+    <!-- 기술적 신호 page -->
+    <div id="page-signals" class="page">
+      <div class="page-header">
+        <div class="page-title">📈 기술적 신호</div>
+        <div class="date-selector">
+          <label>날짜 선택:</label>
+          <select id="signals-date-select"><option>불러오는 중...</option></select>
+        </div>
+      </div>
+      <div id="signals-content"><div class="msg">날짜를 선택하면 신호가 표시됩니다.</div></div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+// ── Tab navigation ──────────────────────────────────────────────
+document.querySelectorAll('.nav-item').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    item.classList.add('active');
+    document.getElementById('page-' + item.dataset.tab).classList.add('active');
+  });
+});
+
+// ── Helpers ─────────────────────────────────────────────────────
+async function fetchJSON(url) {
+  const res = await fetch(url + '?t=' + Date.now());
+  if (!res.ok) throw new Error(res.status);
+  return res.json();
+}
+
+function pct(v, cls='') {
+  if (v == null) return '<span class="v-muted">-</span>';
+  return `<span class="${cls}">${Number(v).toFixed(1)}%</span>`;
+}
+
+function num(v) {
+  if (v == null) return '<span class="v-muted">-</span>';
+  return Number(v).toLocaleString();
+}
+
+// ── 20-20 CLUB ──────────────────────────────────────────────────
+let clubLoaded = false;
+
+async function initClub() {
+  if (clubLoaded) return;
+  clubLoaded = true;
+  const el = document.getElementById('club-content');
+  try {
+    const index = await fetchJSON('./data/club/index.json');
+    const dates = index.dates || [];
+    const sel = document.getElementById('club-date-select');
+    if (dates.length === 0) {
+      sel.innerHTML = '<option>데이터 없음</option>';
+      el.innerHTML = '<div class="msg">아직 데이터가 없습니다.<div class="hint">분기 스크리닝 실행 후 표시됩니다.</div></div>';
+      return;
+    }
+    sel.innerHTML = dates.map((d, i) =>
+      `<option value="${d}">${d}${i === 0 ? ' (최신)' : ''}</option>`
+    ).join('');
+    sel.addEventListener('change', () => loadClub(sel.value));
+    await loadClub(dates[0]);
+  } catch(e) {
+    el.innerHTML = '<div class="msg err">데이터를 불러올 수 없습니다.<div class="hint">분기 스크리닝 실행 후 표시됩니다.</div></div>';
+  }
+}
+
+async function loadClub(date) {
+  const el = document.getElementById('club-content');
+  el.innerHTML = '<div class="msg">로딩 중...</div>';
+  try {
+    const data = await fetchJSON(`./data/club/${date}.json`);
+    el.innerHTML = renderClub(data);
+  } catch(e) {
+    el.innerHTML = '<div class="msg err">데이터를 불러올 수 없습니다.</div>';
+  }
+}
+
+function renderClub(data) {
+  const { updated_at, bsns_year, kr = [], us = [] } = data;
+  let html = `
+    <div class="meta-info">
+      <span class="meta-item"><span class="dot"></span>업데이트: ${updated_at}</span>
+      <span class="meta-item"><span class="dot"></span>기준: ${bsns_year}년 DART 사업보고서</span>
+      <span class="meta-item"><span class="dot"></span>기준: 영업이익률 ≥ 20% &amp; ROE ≥ 20%</span>
+    </div>`;
+
+  // KR section
+  html += `
+  <div class="section">
+    <div class="section-header hdr-kr">
+      🇰🇷 한국 (KOSPI + KOSDAQ)
+      <span class="count">${kr.length}개 선별</span>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr>
+        <th class="c">#</th>
+        <th>종목코드</th>
+        <th>종목명</th>
+        <th class="c">시장</th>
+        <th class="r">영업이익률</th>
+        <th class="r">ROE</th>
+        <th class="r">매출 CAGR</th>
+        <th class="c">기준연도</th>
+      </tr></thead>
+      <tbody>`;
+
+  if (kr.length === 0) {
+    html += '<tr><td colspan="8" class="msg">기준을 충족하는 기업이 없습니다.</td></tr>';
+  } else {
+    kr.forEach(r => {
+      const mkt = r.market === 'KOSPI'
+        ? '<span class="badge b-kospi">KOSPI</span>'
+        : '<span class="badge b-kosdaq">KOSDAQ</span>';
+      const grow = r.growth_flag ? '<span class="badge b-growth">고성장</span>' : '';
+      const cagrCls = r.growth_flag ? 'v-org' : '';
+      html += `<tr class="${r.growth_flag ? 'r-growth' : ''}">
+        <td class="c" style="color:#aaa;font-weight:700">${r.rank}</td>
+        <td class="code">${r.stock_code}</td>
+        <td><strong>${r.corp_name}</strong>${grow}</td>
+        <td class="c">${mkt}</td>
+        <td class="r">${pct(r.op_margin, 'v-red')}</td>
+        <td class="r">${pct(r.roe, 'v-grn')}</td>
+        <td class="r">${pct(r.rev_cagr, cagrCls)}</td>
+        <td class="c" style="color:#777">${r.base_year}</td>
+      </tr>`;
+    });
+  }
+  html += '</tbody></table></div></div>';
+
+  // US section
+  html += `
+  <div class="section">
+    <div class="section-header hdr-us">
+      🇺🇸 미국 (S&amp;P 500) — TTM 기준
+      <span class="count">${us.length}개 선별</span>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr>
+        <th class="c">#</th>
+        <th>티커</th>
+        <th>종목명</th>
+        <th>섹터</th>
+        <th class="r">영업이익률</th>
+        <th class="r">ROE</th>
+        <th class="r">매출 CAGR</th>
+      </tr></thead>
+      <tbody>`;
+
+  if (us.length === 0) {
+    html += '<tr><td colspan="7" class="msg">기준을 충족하는 기업이 없습니다.</td></tr>';
+  } else {
+    us.forEach(r => {
+      const grow = r.growth_flag ? '<span class="badge b-growth">고성장</span>' : '';
+      const cagrCls = r.growth_flag ? 'v-org' : '';
+      html += `<tr class="${r.growth_flag ? 'r-growth' : ''}">
+        <td class="c" style="color:#aaa;font-weight:700">${r.rank}</td>
+        <td class="code" style="font-weight:700;color:#c62828">${r.symbol}</td>
+        <td><strong>${r.corp_name}</strong>${grow}</td>
+        <td style="color:#666;font-size:12px">${r.sector}</td>
+        <td class="r">${pct(r.op_margin, 'v-red')}</td>
+        <td class="r">${pct(r.roe, 'v-grn')}</td>
+        <td class="r">${pct(r.rev_cagr, cagrCls)}</td>
+      </tr>`;
+    });
+  }
+  html += '</tbody></table></div></div>';
+
+  return html;
+}
+
+// ── 기술적 신호 ──────────────────────────────────────────────────
+let signalsLoaded = false;
+
+async function initSignals() {
+  if (signalsLoaded) return;
+  signalsLoaded = true;
+  const el = document.getElementById('signals-content');
+  try {
+    const index = await fetchJSON('./data/signals/index.json');
+    const dates = index.dates || [];
+    const sel = document.getElementById('signals-date-select');
+    if (dates.length === 0) {
+      sel.innerHTML = '<option>데이터 없음</option>';
+      el.innerHTML = '<div class="msg">아직 신호 기록이 없습니다.<div class="hint">첫 신호 발생 후 표시됩니다.</div></div>';
+      return;
+    }
+    sel.innerHTML = dates.map((d, i) =>
+      `<option value="${d}">${d}${i === 0 ? ' (최신)' : ''}</option>`
+    ).join('');
+    sel.addEventListener('change', () => loadSignals(sel.value));
+    await loadSignals(dates[0]);
+  } catch(e) {
+    el.innerHTML = '<div class="msg err">데이터를 불러올 수 없습니다.<div class="hint">첫 신호 발생 후 표시됩니다.</div></div>';
+  }
+}
+
+async function loadSignals(date) {
+  const el = document.getElementById('signals-content');
+  el.innerHTML = '<div class="msg">로딩 중...</div>';
+  try {
+    const data = await fetchJSON(`./data/signals/${date}.json`);
+    el.innerHTML = renderSignals(data);
+  } catch(e) {
+    el.innerHTML = '<div class="msg err">데이터를 불러올 수 없습니다.</div>';
+  }
+}
+
+function signalRow(s, type) {
+  const star = s.is_2020_club ? '<span class="badge b-star">★ 20-20</span>' : '';
+  const mkt  = s.market === 'KOSPI'
+    ? '<span class="badge b-kospi">KOSPI</span>'
+    : '<span class="badge b-kosdaq">KOSDAQ</span>';
+
+  let extra = '';
+  if (type === 'A') {
+    extra = `
+      <td class="r v-org">${s.bandwidth_pct}%</td>
+      <td class="r" style="color:#555">${num(s.upper_band)}</td>
+      <td class="r" style="font-weight:600">${num(s.close)}</td>`;
+  } else if (type === 'B') {
+    extra = `
+      <td class="r" style="color:#555">${num(s.lower_band)}</td>
+      <td class="r" style="font-weight:600">${num(s.close)}</td>`;
+  } else if (type === 'C') {
+    extra = `
+      <td class="r v-red">${s.rsi}</td>
+      <td class="r" style="color:#555">${s.macd_hist}</td>
+      <td class="r" style="font-weight:600">${num(s.close)}</td>`;
+  }
+
+  return `<tr>
+    <td class="code">${s.code}</td>
+    <td><strong>${s.name}</strong>${star}</td>
+    <td class="c">${mkt}</td>
+    ${extra}
+  </tr>`;
+}
+
+function renderSignals(data) {
+  const { scan_date, club_updated, A = [], B = [], C = [] } = data;
+
+  let html = `
+    <div class="meta-info">
+      <span class="meta-item"><span class="dot"></span>스캔: ${scan_date}</span>
+      <span class="meta-item"><span class="dot"></span>20-20 Club 기준일: ${club_updated}</span>
+    </div>`;
+
+  // Signal A
+  html += `
+  <div class="section">
+    <div class="section-header hdr-a">
+      A. Bandwidth 15% 이하 + 상단 터치 (일봉 BB 20)
+      <span class="count">${A.length}개</span>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr>
+        <th>종목코드</th><th>종목명</th><th class="c">시장</th>
+        <th class="r">밴드폭</th><th class="r">상단선</th><th class="r">종가</th>
+      </tr></thead>
+      <tbody>`;
+  if (A.length === 0) html += '<tr><td colspan="6" class="msg">해당 종목 없음</td></tr>';
+  else A.forEach(s => { html += signalRow(s, 'A'); });
+  html += '</tbody></table></div></div>';
+
+  // Signal B
+  html += `
+  <div class="section">
+    <div class="section-header hdr-b">
+      B. 포카라 80일 BB 하방 터치 (일봉 BB 80)
+      <span class="count">${B.length}개</span>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr>
+        <th>종목코드</th><th>종목명</th><th class="c">시장</th>
+        <th class="r">하단선</th><th class="r">종가</th>
+      </tr></thead>
+      <tbody>`;
+  if (B.length === 0) html += '<tr><td colspan="5" class="msg">해당 종목 없음</td></tr>';
+  else B.forEach(s => { html += signalRow(s, 'B'); });
+  html += '</tbody></table></div></div>';
+
+  // Signal C
+  html += `
+  <div class="section">
+    <div class="section-header hdr-c">
+      C. 주봉 RSI &lt; 30 + MACD 오실레이터 추세 전환
+      <span class="count">${C.length}개</span>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr>
+        <th>종목코드</th><th>종목명</th><th class="c">시장</th>
+        <th class="r">RSI (주봉)</th><th class="r">MACD Hist</th><th class="r">종가</th>
+      </tr></thead>
+      <tbody>`;
+  if (C.length === 0) html += '<tr><td colspan="6" class="msg">해당 종목 없음</td></tr>';
+  else C.forEach(s => { html += signalRow(s, 'C'); });
+  html += '</tbody></table></div></div>';
+
+  return html;
+}
+
+// ── Initialize ──────────────────────────────────────────────────
+initClub();
+
+document.querySelector('[data-tab="signals"]').addEventListener('click', initSignals);
+</script>
+</body>
+</html>

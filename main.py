@@ -6,6 +6,7 @@
 
 import json
 import logging
+import math
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -24,6 +25,82 @@ logging.basicConfig(
     ],
 )
 logger = logging.getLogger(__name__)
+
+
+def _safe_float(v):
+    """NaN/None → None, 나머지는 float 반환."""
+    if v is None:
+        return None
+    try:
+        f = float(v)
+        return None if math.isnan(f) else f
+    except (TypeError, ValueError):
+        return None
+
+
+def _save_club_for_web(result_df, bsns_year, us_result_df=None):
+    """20-20 Club 선별 결과를 docs/data/club/ 에 날짜별 JSON 파일로 저장."""
+    docs_dir = Path("docs/data/club")
+    docs_dir.mkdir(parents=True, exist_ok=True)
+
+    date_str = datetime.now().strftime("%Y-%m-%d")
+
+    kr_records = []
+    for _, row in result_df.iterrows():
+        kr_records.append({
+            "rank": int(row["rank"]),
+            "stock_code": str(row["stock_code"]).zfill(6),
+            "corp_name": str(row["corp_name"]),
+            "market": str(row["market"]),
+            "op_margin": float(row["op_margin"]),
+            "roe": float(row["roe"]),
+            "rev_cagr": _safe_float(row.get("rev_cagr")),
+            "growth_flag": bool(row.get("growth_flag", False)),
+            "base_year": int(row["base_year"]),
+        })
+
+    us_records = []
+    if us_result_df is not None and not us_result_df.empty:
+        for i, (_, row) in enumerate(us_result_df.iterrows(), 1):
+            us_records.append({
+                "rank": i,
+                "symbol": str(row["symbol"]),
+                "corp_name": str(row["corp_name"]),
+                "sector": str(row.get("sector", "")),
+                "op_margin": float(row["op_margin"]),
+                "roe": float(row["roe"]),
+                "rev_cagr": _safe_float(row.get("rev_cagr")),
+                "growth_flag": bool(row.get("growth_flag", False)),
+            })
+
+    data = {
+        "updated_at": date_str,
+        "bsns_year": int(bsns_year),
+        "kr": kr_records,
+        "us": us_records,
+    }
+
+    data_file = docs_dir / f"{date_str}.json"
+    with open(data_file, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+    index_file = docs_dir / "index.json"
+    if index_file.exists():
+        with open(index_file, "r", encoding="utf-8") as f:
+            index = json.load(f)
+    else:
+        index = {"dates": []}
+
+    if date_str not in index["dates"]:
+        index["dates"].append(date_str)
+        index["dates"].sort(reverse=True)
+        with open(index_file, "w", encoding="utf-8") as f:
+            json.dump(index, f, ensure_ascii=False, indent=2)
+
+    logger.info(
+        f"웹 데이터 저장: docs/data/club/{date_str}.json "
+        f"(KR {len(kr_records)}개, US {len(us_records)}개)"
+    )
 
 
 def _save_2020_club_cache(result_df, bsns_year):
@@ -90,6 +167,7 @@ def main():
     us_result_df = screen_sp500()
 
     _save_2020_club_cache(result_df, bsns_year)
+    _save_club_for_web(result_df, bsns_year, us_result_df)
 
     logger.info("[7/7] 이메일 작성 및 발송")
     html_body = build_html_email(result_df, bsns_year, us_result_df=us_result_df)
