@@ -8,6 +8,7 @@ import json
 import logging
 import math
 import sys
+import numpy as np
 from datetime import datetime
 from pathlib import Path
 
@@ -27,6 +28,17 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+class _NumpyEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, np.integer):
+            return int(obj)
+        if isinstance(obj, np.floating):
+            return float(obj)
+        if isinstance(obj, np.bool_):
+            return bool(obj)
+        return super().default(obj)
+
+
 def _save_signals_for_web(signals: dict) -> None:
     """기술적 신호 결과를 docs/data/signals/ 에 날짜별 JSON 파일로 저장."""
     docs_dir = Path("docs/data/signals")
@@ -36,7 +48,7 @@ def _save_signals_for_web(signals: dict) -> None:
 
     data_file = docs_dir / f"{date_str}.json"
     with open(data_file, "w", encoding="utf-8") as f:
-        json.dump(signals, f, ensure_ascii=False, indent=2)
+        json.dump(signals, f, ensure_ascii=False, indent=2, cls=_NumpyEncoder)
 
     index_file = docs_dir / "index.json"
     if index_file.exists():

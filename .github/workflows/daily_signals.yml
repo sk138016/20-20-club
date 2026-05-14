@@ -2,7 +2,7 @@ name: Daily Technical Signals
 
 on:
   schedule:
-    - cron: '0 23 * * 1-5'  # 월~금 23:00 UTC = 오후 7시 EDT (ET 하절기)
+    - cron: '30 7 * * 1-5'  # 월~금 07:30 UTC = 16:30 KST (한국 장 마감 후)
   workflow_dispatch:          # 수동 테스트용
 
 permissions:

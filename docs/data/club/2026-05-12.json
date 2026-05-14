@@ -1,0 +1,1443 @@
+{
+  "updated_at": "2026-05-12",
+  "bsns_year": 2025,
+  "kr": [
+    {
+      "rank": 1,
+      "stock_code": "402340",
+      "corp_name": "SK스퀘어",
+      "market": "KOSPI",
+      "op_margin": 623.26,
+      "roe": 31.51,
+      "rev_cagr": -21.3,
+      "growth_flag": false,
+      "base_year": 2025
+    },
+    {
+      "rank": 2,
+      "stock_code": "462870",
+      "corp_name": "시프트업",
+      "market": "KOSPI",
+      "op_margin": 61.59,
+      "roe": 20.78,
+      "rev_cagr": null,
+      "growth_flag": false,
+      "base_year": 2025
+    },
+    {
+      "rank": 3,
+      "stock_code": "039200",
+      "corp_name": "오스코텍",
+      "market": "KOSDAQ",
+      "op_margin": 52.17,
+      "roe": 29.11,
+      "rev_cagr": 349.1,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 4,
+      "stock_code": "403870",
+      "corp_name": "HPSP",
+      "market": "KOSDAQ",
+      "op_margin": 51.98,
+      "roe": 23.57,
+      "rev_cagr": -1.7,
+      "growth_flag": false,
+      "base_year": 2025
+    },
+    {
+      "rank": 5,
+      "stock_code": "214150",
+      "corp_name": "클래시스",
+      "market": "KOSDAQ",
+      "op_margin": 50.65,
+      "roe": 23.92,
+      "rev_cagr": 36.7,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 6,
+      "stock_code": "196170",
+      "corp_name": "알테오젠",
+      "market": "KOSDAQ",
+      "op_margin": 49.52,
+      "roe": 31.95,
+      "rev_cagr": 49.5,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 7,
+      "stock_code": "000660",
+      "corp_name": "SK하이닉스",
+      "market": "KOSPI",
+      "op_margin": 48.59,
+      "roe": 35.59,
+      "rev_cagr": 72.2,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 8,
+      "stock_code": "058470",
+      "corp_name": "리노공업",
+      "market": "KOSDAQ",
+      "op_margin": 47.51,
+      "roe": 20.78,
+      "rev_cagr": 20.7,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 9,
+      "stock_code": "207940",
+      "corp_name": "삼성바이오로직스",
+      "market": "KOSPI",
+      "op_margin": 45.41,
+      "roe": 23.95,
+      "rev_cagr": 11.1,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 10,
+      "stock_code": "042700",
+      "corp_name": "한미반도체",
+      "market": "KOSPI",
+      "op_margin": 43.59,
+      "roe": 31.0,
+      "rev_cagr": 90.4,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 11,
+      "stock_code": "206650",
+      "corp_name": "유바이오로직스",
+      "market": "KOSDAQ",
+      "op_margin": 40.66,
+      "roe": 23.53,
+      "rev_cagr": 46.7,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 12,
+      "stock_code": "214450",
+      "corp_name": "파마리서치",
+      "market": "KOSDAQ",
+      "op_margin": 39.98,
+      "roe": 23.24,
+      "rev_cagr": 43.3,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 13,
+      "stock_code": "062040",
+      "corp_name": "산일전기",
+      "market": "KOSPI",
+      "op_margin": 35.59,
+      "roe": 25.44,
+      "rev_cagr": null,
+      "growth_flag": false,
+      "base_year": 2025
+    },
+    {
+      "rank": 14,
+      "stock_code": "045340",
+      "corp_name": "토탈소프트",
+      "market": "KOSDAQ",
+      "op_margin": 34.04,
+      "roe": 23.33,
+      "rev_cagr": 30.9,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 15,
+      "stock_code": "458870",
+      "corp_name": "씨어스",
+      "market": "KOSDAQ",
+      "op_margin": 33.89,
+      "roe": 40.5,
+      "rev_cagr": null,
+      "growth_flag": false,
+      "base_year": 2025
+    },
+    {
+      "rank": 16,
+      "stock_code": "336570",
+      "corp_name": "원텍",
+      "market": "KOSDAQ",
+      "op_margin": 32.95,
+      "roe": 22.38,
+      "rev_cagr": 16.5,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 17,
+      "stock_code": "461300",
+      "corp_name": "아이스크림미디어",
+      "market": "KOSDAQ",
+      "op_margin": 31.53,
+      "roe": 24.05,
+      "rev_cagr": null,
+      "growth_flag": false,
+      "base_year": 2025
+    },
+    {
+      "rank": 18,
+      "stock_code": "034950",
+      "corp_name": "한국기업평가",
+      "market": "KOSDAQ",
+      "op_margin": 31.28,
+      "roe": 20.12,
+      "rev_cagr": 7.2,
+      "growth_flag": false,
+      "base_year": 2025
+    },
+    {
+      "rank": 19,
+      "stock_code": "019010",
+      "corp_name": "베뉴지",
+      "market": "KOSDAQ",
+      "op_margin": 31.19,
+      "roe": 22.71,
+      "rev_cagr": -13.9,
+      "growth_flag": false,
+      "base_year": 2025
+    },
+    {
+      "rank": 20,
+      "stock_code": "092130",
+      "corp_name": "이크레더블",
+      "market": "KOSDAQ",
+      "op_margin": 31.15,
+      "roe": 30.15,
+      "rev_cagr": 10.3,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 21,
+      "stock_code": "005690",
+      "corp_name": "파미셀",
+      "market": "KOSPI",
+      "op_margin": 30.08,
+      "roe": 32.52,
+      "rev_cagr": 42.4,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 22,
+      "stock_code": "033100",
+      "corp_name": "제룡전기",
+      "market": "KOSDAQ",
+      "op_margin": 29.92,
+      "roe": 24.53,
+      "rev_cagr": 10.4,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 23,
+      "stock_code": "326030",
+      "corp_name": "에스케이바이오팜",
+      "market": "KOSPI",
+      "op_margin": 28.86,
+      "roe": 30.65,
+      "rev_cagr": 41.1,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 24,
+      "stock_code": "052400",
+      "corp_name": "코나아이",
+      "market": "KOSDAQ",
+      "op_margin": 28.75,
+      "roe": 28.9,
+      "rev_cagr": 5.0,
+      "growth_flag": false,
+      "base_year": 2025
+    },
+    {
+      "rank": 25,
+      "stock_code": "067160",
+      "corp_name": "SOOP",
+      "market": "KOSDAQ",
+      "op_margin": 26.76,
+      "roe": 20.62,
+      "rev_cagr": 16.5,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 26,
+      "stock_code": "272110",
+      "corp_name": "케이엔제이",
+      "market": "KOSDAQ",
+      "op_margin": 26.34,
+      "roe": 26.3,
+      "rev_cagr": 16.8,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 27,
+      "stock_code": "267260",
+      "corp_name": "HD현대일렉트릭",
+      "market": "KOSPI",
+      "op_margin": 24.4,
+      "roe": 36.0,
+      "rev_cagr": 22.9,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 28,
+      "stock_code": "383220",
+      "corp_name": "F&F",
+      "market": "KOSPI",
+      "op_margin": 24.23,
+      "roe": 21.33,
+      "rev_cagr": -1.1,
+      "growth_flag": false,
+      "base_year": 2025
+    },
+    {
+      "rank": 29,
+      "stock_code": "184230",
+      "corp_name": "SGA솔루션즈",
+      "market": "KOSDAQ",
+      "op_margin": 24.05,
+      "roe": 32.08,
+      "rev_cagr": 6.1,
+      "growth_flag": false,
+      "base_year": 2025
+    },
+    {
+      "rank": 30,
+      "stock_code": "439260",
+      "corp_name": "대한조선",
+      "market": "KOSPI",
+      "op_margin": 23.95,
+      "roe": 22.77,
+      "rev_cagr": null,
+      "growth_flag": false,
+      "base_year": 2025
+    },
+    {
+      "rank": 31,
+      "stock_code": "278470",
+      "corp_name": "에이피알",
+      "market": "KOSPI",
+      "op_margin": 23.93,
+      "roe": 64.97,
+      "rev_cagr": 70.8,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 32,
+      "stock_code": "368770",
+      "corp_name": "파이버프로",
+      "market": "KOSDAQ",
+      "op_margin": 23.27,
+      "roe": 20.33,
+      "rev_cagr": 49.7,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 33,
+      "stock_code": "003230",
+      "corp_name": "삼양식품",
+      "market": "KOSPI",
+      "op_margin": 22.29,
+      "roe": 30.57,
+      "rev_cagr": 40.4,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 34,
+      "stock_code": "065710",
+      "corp_name": "서호전기",
+      "market": "KOSDAQ",
+      "op_margin": 21.72,
+      "roe": 24.95,
+      "rev_cagr": 32.8,
+      "growth_flag": true,
+      "base_year": 2025
+    },
+    {
+      "rank": 35,
+      "stock_code": "171090",
+      "corp_name": "선익시스템",
+      "market": "KOSDAQ",
+      "op_margin": 21.62,
+      "roe": 67.12,
+      "rev_cagr": 187.5,
+      "growth_flag": true,
+      "base_year": 2025
+    }
+  ],
+  "us": [
+    {
+      "rank": 1,
+      "symbol": "APP",
+      "corp_name": "Applovin Corporation",
+      "sector": "Communication Services",
+      "op_margin": 78.15,
+      "roe": 266.44,
+      "rev_cagr": 72.5,
+      "growth_flag": true
+    },
+    {
+      "rank": 2,
+      "symbol": "TPL",
+      "corp_name": "Texas Pacific Land Corporation",
+      "sector": "Energy",
+      "op_margin": 77.22,
+      "roe": 36.47,
+      "rev_cagr": 12.4,
+      "growth_flag": true
+    },
+    {
+      "rank": 3,
+      "symbol": "IBKR",
+      "corp_name": "Interactive Brokers Group, Inc.",
+      "sector": "Financial Services",
+      "op_margin": 76.81,
+      "roe": 23.56,
+      "rev_cagr": 14.6,
+      "growth_flag": true
+    },
+    {
+      "rank": 4,
+      "symbol": "SNDK",
+      "corp_name": "Sandisk Corporation",
+      "sector": "Technology",
+      "op_margin": 69.98,
+      "roe": 39.3,
+      "rev_cagr": 9.9,
+      "growth_flag": false
+    },
+    {
+      "rank": 5,
+      "symbol": "MU",
+      "corp_name": "Micron Technology, Inc.",
+      "sector": "Technology",
+      "op_margin": 67.62,
+      "roe": 39.82,
+      "rev_cagr": 55.1,
+      "growth_flag": true
+    },
+    {
+      "rank": 6,
+      "symbol": "V",
+      "corp_name": "Visa Inc.",
+      "sector": "Financial Services",
+      "op_margin": 67.35,
+      "roe": 60.35,
+      "rev_cagr": 10.7,
+      "growth_flag": true
+    },
+    {
+      "rank": 7,
+      "symbol": "NVDA",
+      "corp_name": "NVIDIA Corporation",
+      "sector": "Technology",
+      "op_margin": 65.02,
+      "roe": 101.48,
+      "rev_cagr": 88.3,
+      "growth_flag": true
+    },
+    {
+      "rank": 8,
+      "symbol": "GEN",
+      "corp_name": "Gen Digital Inc.",
+      "sector": "Technology",
+      "op_margin": 63.37,
+      "roe": 39.88,
+      "rev_cagr": 8.9,
+      "growth_flag": false
+    },
+    {
+      "rank": 9,
+      "symbol": "NEM",
+      "corp_name": "Newmont Corporation",
+      "sector": "Basic Materials",
+      "op_margin": 61.38,
+      "roe": 25.83,
+      "rev_cagr": 38.5,
+      "growth_flag": true
+    },
+    {
+      "rank": 10,
+      "symbol": "MA",
+      "corp_name": "Mastercard Incorporated",
+      "sector": "Financial Services",
+      "op_margin": 60.84,
+      "roe": 232.08,
+      "rev_cagr": 14.3,
+      "growth_flag": true
+    },
+    {
+      "rank": 11,
+      "symbol": "LLY",
+      "corp_name": "Eli Lilly and Company",
+      "sector": "Healthcare",
+      "op_margin": 49.39,
+      "roe": 107.46,
+      "rev_cagr": 38.2,
+      "growth_flag": true
+    },
+    {
+      "rank": 12,
+      "symbol": "SYF",
+      "corp_name": "Synchrony Financial",
+      "sector": "Financial Services",
+      "op_margin": 48.03,
+      "roe": 21.78,
+      "rev_cagr": 4.9,
+      "growth_flag": false
+    },
+    {
+      "rank": 13,
+      "symbol": "NXPI",
+      "corp_name": "NXP Semiconductors N.V.",
+      "sector": "Technology",
+      "op_margin": 47.38,
+      "roe": 25.81,
+      "rev_cagr": -3.9,
+      "growth_flag": false
+    },
+    {
+      "rank": 14,
+      "symbol": "MSFT",
+      "corp_name": "Microsoft Corporation",
+      "sector": "Technology",
+      "op_margin": 46.33,
+      "roe": 34.01,
+      "rev_cagr": 15.3,
+      "growth_flag": true
+    },
+    {
+      "rank": 15,
+      "symbol": "PLTR",
+      "corp_name": "Palantir Technologies Inc.",
+      "sector": "Technology",
+      "op_margin": 46.18,
+      "roe": 32.59,
+      "rev_cagr": 41.8,
+      "growth_flag": true
+    },
+    {
+      "rank": 16,
+      "symbol": "PSA",
+      "corp_name": "Public Storage",
+      "sector": "Real Estate",
+      "op_margin": 46.03,
+      "roe": 20.18,
+      "rev_cagr": 3.3,
+      "growth_flag": false
+    },
+    {
+      "rank": 17,
+      "symbol": "AMT",
+      "corp_name": "American Tower Corporation (REI",
+      "sector": "Real Estate",
+      "op_margin": 45.91,
+      "roe": 29.95,
+      "rev_cagr": 3.1,
+      "growth_flag": false
+    },
+    {
+      "rank": 18,
+      "symbol": "MCO",
+      "corp_name": "Moody's Corporation",
+      "sector": "Financial Services",
+      "op_margin": 45.74,
+      "roe": 71.36,
+      "rev_cagr": 14.2,
+      "growth_flag": true
+    },
+    {
+      "rank": 19,
+      "symbol": "AVGO",
+      "corp_name": "Broadcom Inc.",
+      "sector": "Technology",
+      "op_margin": 44.94,
+      "roe": 33.37,
+      "rev_cagr": 33.6,
+      "growth_flag": true
+    },
+    {
+      "rank": 20,
+      "symbol": "SPG",
+      "corp_name": "Simon Property Group, Inc.",
+      "sector": "Real Estate",
+      "op_margin": 43.38,
+      "roe": 116.8,
+      "rev_cagr": 6.1,
+      "growth_flag": false
+    },
+    {
+      "rank": 21,
+      "symbol": "ANET",
+      "corp_name": "Arista Networks, Inc.",
+      "sector": "Technology",
+      "op_margin": 42.74,
+      "roe": 31.52,
+      "rev_cagr": 24.0,
+      "growth_flag": true
+    },
+    {
+      "rank": 22,
+      "symbol": "PTC",
+      "corp_name": "PTC Inc.",
+      "sector": "Technology",
+      "op_margin": 41.62,
+      "roe": 34.4,
+      "rev_cagr": 14.3,
+      "growth_flag": true
+    },
+    {
+      "rank": 23,
+      "symbol": "CPAY",
+      "corp_name": "Corpay, Inc.",
+      "sector": "Technology",
+      "op_margin": 41.4,
+      "roe": 32.12,
+      "rev_cagr": 9.8,
+      "growth_flag": false
+    },
+    {
+      "rank": 24,
+      "symbol": "KLAC",
+      "corp_name": "KLA Corporation",
+      "sector": "Technology",
+      "op_margin": 41.22,
+      "roe": 94.98,
+      "rev_cagr": 7.6,
+      "growth_flag": false
+    },
+    {
+      "rank": 25,
+      "symbol": "META",
+      "corp_name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "op_margin": 40.62,
+      "roe": 32.93,
+      "rev_cagr": 22.1,
+      "growth_flag": true
+    },
+    {
+      "rank": 26,
+      "symbol": "UNP",
+      "corp_name": "Union Pacific Corporation",
+      "sector": "Industrials",
+      "op_margin": 40.36,
+      "roe": 40.69,
+      "rev_cagr": 0.8,
+      "growth_flag": false
+    },
+    {
+      "rank": 27,
+      "symbol": "CBOE",
+      "corp_name": "Cboe Global Markets, Inc.",
+      "sector": "Financial Services",
+      "op_margin": 39.72,
+      "roe": 25.14,
+      "rev_cagr": 11.8,
+      "growth_flag": true
+    },
+    {
+      "rank": 28,
+      "symbol": "GILD",
+      "corp_name": "Gilead Sciences, Inc.",
+      "sector": "Healthcare",
+      "op_margin": 39.28,
+      "roe": 43.36,
+      "rev_cagr": 4.2,
+      "growth_flag": false
+    },
+    {
+      "rank": 29,
+      "symbol": "ADBE",
+      "corp_name": "Adobe Inc.",
+      "sector": "Technology",
+      "op_margin": 38.76,
+      "roe": 58.77,
+      "rev_cagr": 10.7,
+      "growth_flag": true
+    },
+    {
+      "rank": 30,
+      "symbol": "HOOD",
+      "corp_name": "Robinhood Markets, Inc.",
+      "sector": "Financial Services",
+      "op_margin": 38.52,
+      "roe": 21.46,
+      "rev_cagr": 54.9,
+      "growth_flag": true
+    },
+    {
+      "rank": 31,
+      "symbol": "APA",
+      "corp_name": "APA Corporation",
+      "sector": "Energy",
+      "op_margin": 38.49,
+      "roe": 26.22,
+      "rev_cagr": 3.8,
+      "growth_flag": false
+    },
+    {
+      "rank": 32,
+      "symbol": "VRTX",
+      "corp_name": "Vertex Pharmaceuticals Incorpor",
+      "sector": "Healthcare",
+      "op_margin": 38.13,
+      "roe": 24.2,
+      "rev_cagr": 10.3,
+      "growth_flag": true
+    },
+    {
+      "rank": 33,
+      "symbol": "BX",
+      "corp_name": "Blackstone Inc.",
+      "sector": "Financial Services",
+      "op_margin": 38.03,
+      "roe": 29.53,
+      "rev_cagr": 33.1,
+      "growth_flag": true
+    },
+    {
+      "rank": 34,
+      "symbol": "TXN",
+      "corp_name": "Texas Instruments Incorporated",
+      "sector": "Technology",
+      "op_margin": 37.82,
+      "roe": 32.35,
+      "rev_cagr": 0.5,
+      "growth_flag": false
+    },
+    {
+      "rank": 35,
+      "symbol": "TER",
+      "corp_name": "Teradyne, Inc.",
+      "sector": "Technology",
+      "op_margin": 37.61,
+      "roe": 28.75,
+      "rev_cagr": 9.2,
+      "growth_flag": false
+    },
+    {
+      "rank": 36,
+      "symbol": "AMP",
+      "corp_name": "Ameriprise Financial, Inc.",
+      "sector": "Financial Services",
+      "op_margin": 37.19,
+      "roe": 66.94,
+      "rev_cagr": 9.1,
+      "growth_flag": false
+    },
+    {
+      "rank": 37,
+      "symbol": "WDC",
+      "corp_name": "Western Digital Corporation",
+      "sector": "Technology",
+      "op_margin": 37.01,
+      "roe": 85.92,
+      "rev_cagr": 23.4,
+      "growth_flag": true
+    },
+    {
+      "rank": 38,
+      "symbol": "ZTS",
+      "corp_name": "Zoetis Inc.",
+      "sector": "Healthcare",
+      "op_margin": 36.56,
+      "roe": 67.75,
+      "rev_cagr": 5.3,
+      "growth_flag": false
+    },
+    {
+      "rank": 39,
+      "symbol": "CSX",
+      "corp_name": "CSX Corporation",
+      "sector": "Industrials",
+      "op_margin": 36.16,
+      "roe": 23.68,
+      "rev_cagr": -1.9,
+      "growth_flag": false
+    },
+    {
+      "rank": 40,
+      "symbol": "GOOGL",
+      "corp_name": "Alphabet Inc.",
+      "sector": "Communication Services",
+      "op_margin": 36.12,
+      "roe": 38.88,
+      "rev_cagr": 14.5,
+      "growth_flag": true
+    },
+    {
+      "rank": 41,
+      "symbol": "AON",
+      "corp_name": "Aon plc",
+      "sector": "Financial Services",
+      "op_margin": 35.84,
+      "roe": 46.45,
+      "rev_cagr": 13.3,
+      "growth_flag": true
+    },
+    {
+      "rank": 42,
+      "symbol": "STX",
+      "corp_name": "Seagate Technology Holdings PLC",
+      "sector": "Technology",
+      "op_margin": 35.67,
+      "roe": 1787.97,
+      "rev_cagr": 11.0,
+      "growth_flag": true
+    },
+    {
+      "rank": 43,
+      "symbol": "RMD",
+      "corp_name": "ResMed Inc.",
+      "sector": "Healthcare",
+      "op_margin": 35.33,
+      "roe": 25.25,
+      "rev_cagr": 10.4,
+      "growth_flag": true
+    },
+    {
+      "rank": 44,
+      "symbol": "KO",
+      "corp_name": "Coca-Cola Company (The)",
+      "sector": "Consumer Defensive",
+      "op_margin": 35.05,
+      "roe": 43.37,
+      "rev_cagr": 2.4,
+      "growth_flag": false
+    },
+    {
+      "rank": 45,
+      "symbol": "LRCX",
+      "corp_name": "Lam Research Corporation",
+      "sector": "Technology",
+      "op_margin": 35.04,
+      "roe": 66.76,
+      "rev_cagr": 2.8,
+      "growth_flag": false
+    },
+    {
+      "rank": 46,
+      "symbol": "AMGN",
+      "corp_name": "Amgen Inc.",
+      "sector": "Healthcare",
+      "op_margin": 33.8,
+      "roe": 101.32,
+      "rev_cagr": 14.2,
+      "growth_flag": true
+    },
+    {
+      "rank": 47,
+      "symbol": "CF",
+      "corp_name": "CF Industries Holdings, Inc.",
+      "sector": "Basic Materials",
+      "op_margin": 33.59,
+      "roe": 27.3,
+      "rev_cagr": 3.4,
+      "growth_flag": false
+    },
+    {
+      "rank": 48,
+      "symbol": "BMY",
+      "corp_name": "Bristol-Myers Squibb Company",
+      "sector": "Healthcare",
+      "op_margin": 33.04,
+      "roe": 38.73,
+      "rev_cagr": 3.5,
+      "growth_flag": false
+    },
+    {
+      "rank": 49,
+      "symbol": "ORCL",
+      "corp_name": "Oracle Corporation",
+      "sector": "Technology",
+      "op_margin": 32.68,
+      "roe": 57.57,
+      "rev_cagr": 7.2,
+      "growth_flag": false
+    },
+    {
+      "rank": 50,
+      "symbol": "NFLX",
+      "corp_name": "Netflix, Inc.",
+      "sector": "Communication Services",
+      "op_margin": 32.3,
+      "roe": 48.49,
+      "rev_cagr": 15.8,
+      "growth_flag": true
+    },
+    {
+      "rank": 51,
+      "symbol": "AAPL",
+      "corp_name": "Apple Inc.",
+      "sector": "Technology",
+      "op_margin": 32.27,
+      "roe": 141.47,
+      "rev_cagr": 4.2,
+      "growth_flag": false
+    },
+    {
+      "rank": 52,
+      "symbol": "BF-B",
+      "corp_name": "Brown Forman Inc",
+      "sector": "Consumer Defensive",
+      "op_margin": 31.91,
+      "roe": 20.42,
+      "rev_cagr": -3.0,
+      "growth_flag": false
+    },
+    {
+      "rank": 53,
+      "symbol": "IDXX",
+      "corp_name": "IDEXX Laboratories, Inc.",
+      "sector": "Healthcare",
+      "op_margin": 31.78,
+      "roe": 72.91,
+      "rev_cagr": 8.4,
+      "growth_flag": false
+    },
+    {
+      "rank": 54,
+      "symbol": "DECK",
+      "corp_name": "Deckers Outdoor Corporation",
+      "sector": "Consumer Cyclical",
+      "op_margin": 31.38,
+      "roe": 39.69,
+      "rev_cagr": 17.2,
+      "growth_flag": true
+    },
+    {
+      "rank": 55,
+      "symbol": "FTNT",
+      "corp_name": "Fortinet, Inc.",
+      "sector": "Technology",
+      "op_margin": 31.28,
+      "roe": 132.39,
+      "rev_cagr": 13.2,
+      "growth_flag": true
+    },
+    {
+      "rank": 56,
+      "symbol": "MNST",
+      "corp_name": "Monster Beverage Corporation",
+      "sector": "Consumer Defensive",
+      "op_margin": 31.02,
+      "roe": 26.65,
+      "rev_cagr": 7.8,
+      "growth_flag": false
+    },
+    {
+      "rank": 57,
+      "symbol": "ADP",
+      "corp_name": "Automatic Data Processing, Inc.",
+      "sector": "Technology",
+      "op_margin": 30.18,
+      "roe": 71.21,
+      "rev_cagr": 6.8,
+      "growth_flag": false
+    },
+    {
+      "rank": 58,
+      "symbol": "AMAT",
+      "corp_name": "Applied Materials, Inc.",
+      "sector": "Technology",
+      "op_margin": 29.89,
+      "roe": 38.86,
+      "rev_cagr": 3.4,
+      "growth_flag": false
+    },
+    {
+      "rank": 59,
+      "symbol": "FDS",
+      "corp_name": "FactSet Research Systems Inc.",
+      "sector": "Financial Services",
+      "op_margin": 29.8,
+      "roe": 28.08,
+      "rev_cagr": 5.5,
+      "growth_flag": false
+    },
+    {
+      "rank": 60,
+      "symbol": "CDNS",
+      "corp_name": "Cadence Design Systems, Inc.",
+      "sector": "Technology",
+      "op_margin": 29.7,
+      "roe": 20.66,
+      "rev_cagr": 13.8,
+      "growth_flag": true
+    },
+    {
+      "rank": 61,
+      "symbol": "HWM",
+      "corp_name": "Howmet Aerospace Inc.",
+      "sector": "Industrials",
+      "op_margin": 28.19,
+      "roe": 33.82,
+      "rev_cagr": 11.5,
+      "growth_flag": true
+    },
+    {
+      "rank": 62,
+      "symbol": "JNJ",
+      "corp_name": "Johnson & Johnson",
+      "sector": "Healthcare",
+      "op_margin": 27.41,
+      "roe": 26.42,
+      "rev_cagr": 5.2,
+      "growth_flag": false
+    },
+    {
+      "rank": 63,
+      "symbol": "APH",
+      "corp_name": "Amphenol Corporation",
+      "sector": "Technology",
+      "op_margin": 27.3,
+      "roe": 36.83,
+      "rev_cagr": 35.6,
+      "growth_flag": true
+    },
+    {
+      "rank": 64,
+      "symbol": "ADSK",
+      "corp_name": "Autodesk, Inc.",
+      "sector": "Technology",
+      "op_margin": 27.24,
+      "roe": 39.67,
+      "rev_cagr": 14.5,
+      "growth_flag": true
+    },
+    {
+      "rank": 65,
+      "symbol": "STZ",
+      "corp_name": "Constellation Brands, Inc.",
+      "sector": "Consumer Defensive",
+      "op_margin": 26.68,
+      "roe": 22.64,
+      "rev_cagr": -4.2,
+      "growth_flag": false
+    },
+    {
+      "rank": 66,
+      "symbol": "VST",
+      "corp_name": "Vistra Corp.",
+      "sector": "Utilities",
+      "op_margin": 26.58,
+      "roe": 42.9,
+      "rev_cagr": 9.6,
+      "growth_flag": false
+    },
+    {
+      "rank": 67,
+      "symbol": "RCL",
+      "corp_name": "Royal Caribbean Cruises Ltd.",
+      "sector": "Consumer Cyclical",
+      "op_margin": 26.17,
+      "roe": 49.58,
+      "rev_cagr": 13.6,
+      "growth_flag": true
+    },
+    {
+      "rank": 68,
+      "symbol": "ITW",
+      "corp_name": "Illinois Tool Works Inc.",
+      "sector": "Industrials",
+      "op_margin": 25.67,
+      "roe": 96.85,
+      "rev_cagr": -0.2,
+      "growth_flag": false
+    },
+    {
+      "rank": 69,
+      "symbol": "INCY",
+      "corp_name": "Incyte Corporation",
+      "sector": "Healthcare",
+      "op_margin": 25.55,
+      "roe": 30.82,
+      "rev_cagr": 17.9,
+      "growth_flag": true
+    },
+    {
+      "rank": 70,
+      "symbol": "LVS",
+      "corp_name": "Las Vegas Sands Corp.",
+      "sector": "Consumer Cyclical",
+      "op_margin": 25.44,
+      "roe": 90.45,
+      "rev_cagr": 12.0,
+      "growth_flag": true
+    },
+    {
+      "rank": 71,
+      "symbol": "ACGL",
+      "corp_name": "Arch Capital Group Ltd.",
+      "sector": "Financial Services",
+      "op_margin": 25.28,
+      "roe": 21.31,
+      "rev_cagr": 20.5,
+      "growth_flag": true
+    },
+    {
+      "rank": 72,
+      "symbol": "NTAP",
+      "corp_name": "NetApp, Inc.",
+      "sector": "Technology",
+      "op_margin": 25.16,
+      "roe": 112.59,
+      "rev_cagr": 1.6,
+      "growth_flag": false
+    },
+    {
+      "rank": 73,
+      "symbol": "CSCO",
+      "corp_name": "Cisco Systems, Inc.",
+      "sector": "Technology",
+      "op_margin": 24.87,
+      "roe": 23.75,
+      "rev_cagr": -0.3,
+      "growth_flag": false
+    },
+    {
+      "rank": 74,
+      "symbol": "GDDY",
+      "corp_name": "GoDaddy Inc.",
+      "sector": "Technology",
+      "op_margin": 24.68,
+      "roe": 398.21,
+      "rev_cagr": 7.9,
+      "growth_flag": false
+    },
+    {
+      "rank": 75,
+      "symbol": "JKHY",
+      "corp_name": "Jack Henry & Associates, Inc.",
+      "sector": "Technology",
+      "op_margin": 24.37,
+      "roe": 24.89,
+      "rev_cagr": 6.9,
+      "growth_flag": false
+    },
+    {
+      "rank": 76,
+      "symbol": "MRSH",
+      "corp_name": "Marsh",
+      "sector": "Financial Services",
+      "op_margin": 24.34,
+      "roe": 27.57,
+      "rev_cagr": 8.9,
+      "growth_flag": false
+    },
+    {
+      "rank": 77,
+      "symbol": "CHTR",
+      "corp_name": "Charter Communications, Inc.",
+      "sector": "Communication Services",
+      "op_margin": 23.88,
+      "roe": 27.5,
+      "rev_cagr": 0.2,
+      "growth_flag": false
+    },
+    {
+      "rank": 78,
+      "symbol": "ODFL",
+      "corp_name": "Old Dominion Freight Line, Inc.",
+      "sector": "Industrials",
+      "op_margin": 23.78,
+      "roe": 23.33,
+      "rev_cagr": -3.2,
+      "growth_flag": false
+    },
+    {
+      "rank": 79,
+      "symbol": "VLTO",
+      "corp_name": "Veralto Corp",
+      "sector": "Industrials",
+      "op_margin": 23.77,
+      "roe": 36.46,
+      "rev_cagr": 4.7,
+      "growth_flag": false
+    },
+    {
+      "rank": 80,
+      "symbol": "GL",
+      "corp_name": "Globe Life Inc.",
+      "sector": "Financial Services",
+      "op_margin": 23.75,
+      "roe": 20.46,
+      "rev_cagr": 4.9,
+      "growth_flag": false
+    },
+    {
+      "rank": 81,
+      "symbol": "MMM",
+      "corp_name": "3M Company",
+      "sector": "Industrials",
+      "op_margin": 23.32,
+      "roe": 71.46,
+      "rev_cagr": 0.7,
+      "growth_flag": false
+    },
+    {
+      "rank": 82,
+      "symbol": "CTAS",
+      "corp_name": "Cintas Corporation",
+      "sector": "Industrials",
+      "op_margin": 23.22,
+      "roe": 41.3,
+      "rev_cagr": 8.3,
+      "growth_flag": false
+    },
+    {
+      "rank": 83,
+      "symbol": "EBAY",
+      "corp_name": "eBay Inc.",
+      "sector": "Consumer Cyclical",
+      "op_margin": 23.15,
+      "roe": 42.88,
+      "rev_cagr": 4.8,
+      "growth_flag": false
+    },
+    {
+      "rank": 84,
+      "symbol": "URI",
+      "corp_name": "United Rentals, Inc.",
+      "sector": "Industrials",
+      "op_margin": 23.09,
+      "roe": 28.24,
+      "rev_cagr": 6.0,
+      "growth_flag": false
+    },
+    {
+      "rank": 85,
+      "symbol": "PG",
+      "corp_name": "Procter & Gamble Company (The)",
+      "sector": "Consumer Defensive",
+      "op_margin": 23.05,
+      "roe": 31.11,
+      "rev_cagr": 1.4,
+      "growth_flag": false
+    },
+    {
+      "rank": 86,
+      "symbol": "TPR",
+      "corp_name": "Tapestry, Inc.",
+      "sector": "Consumer Cyclical",
+      "op_margin": 22.41,
+      "roe": 60.91,
+      "rev_cagr": 2.6,
+      "growth_flag": false
+    },
+    {
+      "rank": 87,
+      "symbol": "LULU",
+      "corp_name": "lululemon athletica inc.",
+      "sector": "Consumer Cyclical",
+      "op_margin": 22.31,
+      "roe": 34.01,
+      "rev_cagr": 7.4,
+      "growth_flag": false
+    },
+    {
+      "rank": 88,
+      "symbol": "QCOM",
+      "corp_name": "QUALCOMM Incorporated",
+      "sector": "Technology",
+      "op_margin": 22.06,
+      "roe": 36.08,
+      "rev_cagr": 11.2,
+      "growth_flag": true
+    },
+    {
+      "rank": 89,
+      "symbol": "FFIV",
+      "corp_name": "F5, Inc.",
+      "sector": "Technology",
+      "op_margin": 22.02,
+      "roe": 20.34,
+      "rev_cagr": 4.8,
+      "growth_flag": false
+    },
+    {
+      "rank": 90,
+      "symbol": "LITE",
+      "corp_name": "Lumentum Holdings Inc.",
+      "sector": "Technology",
+      "op_margin": 21.77,
+      "roe": 22.83,
+      "rev_cagr": -3.5,
+      "growth_flag": false
+    },
+    {
+      "rank": 91,
+      "symbol": "PH",
+      "corp_name": "Parker-Hannifin Corporation",
+      "sector": "Industrials",
+      "op_margin": 21.53,
+      "roe": 24.84,
+      "rev_cagr": 2.0,
+      "growth_flag": false
+    },
+    {
+      "rank": 92,
+      "symbol": "DXCM",
+      "corp_name": "DexCom, Inc.",
+      "sector": "Healthcare",
+      "op_margin": 21.42,
+      "roe": 35.62,
+      "rev_cagr": 13.4,
+      "growth_flag": true
+    },
+    {
+      "rank": 93,
+      "symbol": "HSY",
+      "corp_name": "The Hershey Company",
+      "sector": "Consumer Defensive",
+      "op_margin": 21.34,
+      "roe": 23.23,
+      "rev_cagr": 2.3,
+      "growth_flag": false
+    },
+    {
+      "rank": 94,
+      "symbol": "AXP",
+      "corp_name": "American Express Company",
+      "sector": "Financial Services",
+      "op_margin": 21.25,
+      "roe": 34.42,
+      "rev_cagr": 9.3,
+      "growth_flag": false
+    },
+    {
+      "rank": 95,
+      "symbol": "HON",
+      "corp_name": "Honeywell International Inc.",
+      "sector": "Industrials",
+      "op_margin": 21.0,
+      "roe": 24.26,
+      "rev_cagr": 6.5,
+      "growth_flag": false
+    },
+    {
+      "rank": 96,
+      "symbol": "CL",
+      "corp_name": "Colgate-Palmolive Company",
+      "sector": "Consumer Defensive",
+      "op_margin": 20.92,
+      "roe": 363.58,
+      "rev_cagr": 2.3,
+      "growth_flag": false
+    },
+    {
+      "rank": 97,
+      "symbol": "TRGP",
+      "corp_name": "Targa Resources, Inc.",
+      "sector": "Energy",
+      "op_margin": 20.9,
+      "roe": 74.1,
+      "rev_cagr": 3.0,
+      "growth_flag": false
+    },
+    {
+      "rank": 98,
+      "symbol": "ROK",
+      "corp_name": "Rockwell Automation, Inc.",
+      "sector": "Industrials",
+      "op_margin": 20.72,
+      "roe": 27.18,
+      "rev_cagr": -4.0,
+      "growth_flag": false
+    },
+    {
+      "rank": 99,
+      "symbol": "WTW",
+      "corp_name": "Willis Towers Watson Public Lim",
+      "sector": "Financial Services",
+      "op_margin": 20.52,
+      "roe": 20.61,
+      "rev_cagr": 1.2,
+      "growth_flag": false
+    },
+    {
+      "rank": 100,
+      "symbol": "IT",
+      "corp_name": "Gartner, Inc.",
+      "sector": "Technology",
+      "op_margin": 20.5,
+      "roe": 94.88,
+      "rev_cagr": 4.9,
+      "growth_flag": false
+    },
+    {
+      "rank": 101,
+      "symbol": "TEL",
+      "corp_name": "TE Connectivity plc",
+      "sector": "Technology",
+      "op_margin": 20.34,
+      "roe": 22.72,
+      "rev_cagr": 3.8,
+      "growth_flag": false
+    },
+    {
+      "rank": 102,
+      "symbol": "WSM",
+      "corp_name": "Williams-Sonoma, Inc.",
+      "sector": "Consumer Cyclical",
+      "op_margin": 20.33,
+      "roe": 51.52,
+      "rev_cagr": 0.4,
+      "growth_flag": false
+    },
+    {
+      "rank": 103,
+      "symbol": "FAST",
+      "corp_name": "Fastenal Company",
+      "sector": "Industrials",
+      "op_margin": 20.33,
+      "roe": 33.84,
+      "rev_cagr": 5.7,
+      "growth_flag": false
+    },
+    {
+      "rank": 104,
+      "symbol": "GE",
+      "corp_name": "GE Aerospace",
+      "sector": "Industrials",
+      "op_margin": 20.21,
+      "roe": 45.43,
+      "rev_cagr": 13.9,
+      "growth_flag": true
+    },
+    {
+      "rank": 105,
+      "symbol": "RL",
+      "corp_name": "Ralph Lauren Corporation",
+      "sector": "Consumer Cyclical",
+      "op_margin": 20.09,
+      "roe": 33.85,
+      "rev_cagr": 4.8,
+      "growth_flag": false
+    }
+  ]
+}
