@@ -105,6 +105,20 @@ select:focus { outline: none; border-color: #1a2035; }
 .hdr-a   { background: linear-gradient(135deg, #0d47a1 0%, #1976d2 100%); }
 .hdr-b   { background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%); }
 .hdr-c   { background: linear-gradient(135deg, #1b5e20 0%, #388e3c 100%); }
+.hdr-kospi  { background: linear-gradient(135deg, #1a2035 0%, #2d3561 100%); }
+.hdr-kosdaq { background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%); }
+
+/* ── Band tabs ── */
+.band-tab-bar {
+  display: flex; gap: 6px; margin-bottom: 20px;
+}
+.band-tab-btn {
+  padding: 8px 22px; border: 1.5px solid #d1d5db; border-radius: 7px;
+  background: white; cursor: pointer; font-size: 13px; font-weight: 600;
+  color: #555; transition: all 0.15s; letter-spacing: -0.2px;
+}
+.band-tab-btn.active { background: #1a2035; color: white; border-color: #1a2035; }
+.band-tab-btn:hover:not(.active) { background: #f1f5f9; color: #1a2035; }
 
 /* ── Table ── */
 .table-wrap { background: white; overflow-x: auto; }
@@ -164,6 +178,9 @@ tr.r-growth td:first-child { border-left: 3px solid #f9a825; padding-left: 11px;
       <div class="nav-item active" data-tab="club">
         <span class="icon">📊</span> 20-20 Club
       </div>
+      <div class="nav-item" data-tab="margin">
+        <span class="icon">📐</span> 마진 구간별
+      </div>
       <div class="nav-item" data-tab="signals">
         <span class="icon">📈</span> 기술적 신호
       </div>
@@ -183,6 +200,23 @@ tr.r-growth td:first-child { border-left: 3px solid #f9a825; padding-left: 11px;
         </div>
       </div>
       <div id="club-content"><div class="msg">데이터 로딩 중...</div></div>
+    </div>
+
+    <!-- 마진 구간별 page -->
+    <div id="page-margin" class="page">
+      <div class="page-header">
+        <div class="page-title">📐 영업이익률 구간별 (한국)</div>
+        <div class="date-selector">
+          <label>분기 선택:</label>
+          <select id="margin-date-select"><option>불러오는 중...</option></select>
+        </div>
+      </div>
+      <div class="band-tab-bar">
+        <button class="band-tab-btn active" data-band="low">20~30%</button>
+        <button class="band-tab-btn" data-band="mid">30~40%</button>
+        <button class="band-tab-btn" data-band="high">40% 이상</button>
+      </div>
+      <div id="margin-content"><div class="msg">데이터 로딩 중...</div></div>
     </div>
 
     <!-- 기술적 신호 page -->
@@ -489,9 +523,133 @@ function renderSignals(data) {
   return html;
 }
 
+// ── 마진 구간별 ──────────────────────────────────────────────────
+let marginLoaded = false;
+let marginData = null;
+let currentBand = 'low';
+
+const BANDS = {
+  low:  { label: '20~30%',  min: 20,  max: 30  },
+  mid:  { label: '30~40%',  min: 30,  max: 40  },
+  high: { label: '40% 이상', min: 40,  max: Infinity },
+};
+
+async function initMargin() {
+  if (marginLoaded) return;
+  marginLoaded = true;
+  const el = document.getElementById('margin-content');
+  try {
+    const index = await fetchJSON('./data/club/index.json');
+    const dates = index.dates || [];
+    const sel = document.getElementById('margin-date-select');
+    if (dates.length === 0) {
+      sel.innerHTML = '<option>데이터 없음</option>';
+      el.innerHTML = '<div class="msg">아직 데이터가 없습니다.<div class="hint">분기 스크리닝 실행 후 표시됩니다.</div></div>';
+      return;
+    }
+    sel.innerHTML = dates.map((d, i) =>
+      `<option value="${d}">${d}${i === 0 ? ' (최신)' : ''}</option>`
+    ).join('');
+    sel.addEventListener('change', async () => {
+      await loadMarginData(sel.value);
+      renderMarginBand();
+    });
+    await loadMarginData(dates[0]);
+    renderMarginBand();
+  } catch(e) {
+    el.innerHTML = '<div class="msg err">데이터를 불러올 수 없습니다.</div>';
+  }
+}
+
+async function loadMarginData(date) {
+  const el = document.getElementById('margin-content');
+  el.innerHTML = '<div class="msg">로딩 중...</div>';
+  try {
+    marginData = await fetchJSON(`./data/club/${date}.json`);
+  } catch(e) {
+    el.innerHTML = '<div class="msg err">데이터를 불러올 수 없습니다.</div>';
+    marginData = null;
+  }
+}
+
+function renderMarginBand() {
+  const el = document.getElementById('margin-content');
+  if (!marginData) return;
+
+  const { updated_at, bsns_year, kr = [] } = marginData;
+  const band = BANDS[currentBand];
+  const filtered = kr.filter(r => r.op_margin != null && r.op_margin >= band.min && r.op_margin < band.max);
+
+  const kospi  = filtered.filter(r => r.market === 'KOSPI');
+  const kosdaq = filtered.filter(r => r.market === 'KOSDAQ');
+
+  let html = `
+    <div class="meta-info">
+      <span class="meta-item"><span class="dot"></span>업데이트: ${updated_at}</span>
+      <span class="meta-item"><span class="dot"></span>기준: ${bsns_year}년 DART 사업보고서</span>
+      <span class="meta-item"><span class="dot"></span>영업이익률 ${band.label} &amp; ROE ≥ 20%</span>
+    </div>`;
+
+  html += renderMarketSection('KOSPI', kospi, '🇰🇷 KOSPI', 'hdr-kospi');
+  html += renderMarketSection('KOSDAQ', kosdaq, '🇰🇷 KOSDAQ', 'hdr-kosdaq');
+
+  el.innerHTML = html;
+}
+
+function renderMarketSection(market, rows, label, hdrCls) {
+  let html = `
+  <div class="section">
+    <div class="section-header ${hdrCls}">
+      ${label}
+      <span class="count">${rows.length}개 선별</span>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr>
+        <th class="c">#</th>
+        <th>종목코드</th>
+        <th>종목명</th>
+        <th class="r">영업이익률</th>
+        <th class="r">ROE</th>
+        <th class="r">매출 CAGR</th>
+        <th class="c">기준연도</th>
+      </tr></thead>
+      <tbody>`;
+
+  if (rows.length === 0) {
+    html += '<tr><td colspan="7" class="msg">해당 구간에 종목이 없습니다.</td></tr>';
+  } else {
+    rows.forEach((r, i) => {
+      const grow = r.growth_flag ? '<span class="badge b-growth">고성장</span>' : '';
+      const cagrCls = r.growth_flag ? 'v-org' : '';
+      html += `<tr class="${r.growth_flag ? 'r-growth' : ''}">
+        <td class="c" style="color:#aaa;font-weight:700">${i + 1}</td>
+        <td class="code">${r.stock_code}</td>
+        <td><strong>${r.corp_name}</strong>${grow}</td>
+        <td class="r">${pct(r.op_margin, 'v-red')}</td>
+        <td class="r">${pct(r.roe, 'v-grn')}</td>
+        <td class="r">${pct(r.rev_cagr, cagrCls)}</td>
+        <td class="c" style="color:#777">${r.base_year}</td>
+      </tr>`;
+    });
+  }
+  html += '</tbody></table></div></div>';
+  return html;
+}
+
+// Band tab switching
+document.querySelectorAll('.band-tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.band-tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentBand = btn.dataset.band;
+    if (marginData) renderMarginBand();
+  });
+});
+
 // ── Initialize ──────────────────────────────────────────────────
 initClub();
 
+document.querySelector('[data-tab="margin"]').addEventListener('click', initMargin);
 document.querySelector('[data-tab="signals"]').addEventListener('click', initSignals);
 </script>
 </body>

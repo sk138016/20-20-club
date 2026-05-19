@@ -76,12 +76,11 @@ def main():
     signals = run_technical_screener()
 
     if signals["total"] == 0:
-        logger.info("오늘 발동된 신호 없음 — 저장 생략")
-        return
-
-    logger.info(
-        f"신호 발견 — A: {len(signals['A'])}개 | B: {len(signals['B'])}개 | C: {len(signals['C'])}개"
-    )
+        logger.info("오늘 발동된 신호 없음 — 스캔 기록은 저장")
+    else:
+        logger.info(
+            f"신호 발견 — A: {len(signals['A'])}개 | B: {len(signals['B'])}개 | C: {len(signals['C'])}개"
+        )
 
     _save_signals_for_web(signals)
 
