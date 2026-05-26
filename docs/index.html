@@ -105,8 +105,6 @@ select:focus { outline: none; border-color: #1a2035; }
 .hdr-a   { background: linear-gradient(135deg, #0d47a1 0%, #1976d2 100%); }
 .hdr-b   { background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%); }
 .hdr-c   { background: linear-gradient(135deg, #1b5e20 0%, #388e3c 100%); }
-.hdr-kospi  { background: linear-gradient(135deg, #1a2035 0%, #2d3561 100%); }
-.hdr-kosdaq { background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%); }
 
 /* ── Band tabs ── */
 .band-tab-bar {
@@ -163,6 +161,9 @@ tr.r-growth td:first-child { border-left: 3px solid #f9a825; padding-left: 11px;
 .msg { padding: 52px 24px; text-align: center; color: #9aa; font-size: 14px; background: white; }
 .msg.err { color: #c62828; }
 .msg .hint { font-size: 12px; color: #bbb; margin-top: 6px; }
+
+/* ── Sector cell ── */
+.td-sector { color: #555; font-size: 12px; max-width: 140px; overflow: hidden; text-overflow: ellipsis; }
 </style>
 </head>
 <body>
@@ -179,7 +180,10 @@ tr.r-growth td:first-child { border-left: 3px solid #f9a825; padding-left: 11px;
         <span class="icon">📊</span> 20-20 Club
       </div>
       <div class="nav-item" data-tab="margin">
-        <span class="icon">📐</span> 마진 구간별
+        <span class="icon">📐</span> 한국 마진
+      </div>
+      <div class="nav-item" data-tab="us">
+        <span class="icon">🇺🇸</span> 미국 20-20
       </div>
       <div class="nav-item" data-tab="signals">
         <span class="icon">📈</span> 기술적 신호
@@ -202,21 +206,38 @@ tr.r-growth td:first-child { border-left: 3px solid #f9a825; padding-left: 11px;
       <div id="club-content"><div class="msg">데이터 로딩 중...</div></div>
     </div>
 
-    <!-- 마진 구간별 page -->
+    <!-- 한국 마진 구간별 page -->
     <div id="page-margin" class="page">
       <div class="page-header">
-        <div class="page-title">📐 영업이익률 구간별 (한국)</div>
+        <div class="page-title">📐 한국 마진 구간별</div>
         <div class="date-selector">
           <label>분기 선택:</label>
           <select id="margin-date-select"><option>불러오는 중...</option></select>
         </div>
       </div>
       <div class="band-tab-bar">
-        <button class="band-tab-btn active" data-band="low">20~30%</button>
-        <button class="band-tab-btn" data-band="mid">30~40%</button>
-        <button class="band-tab-btn" data-band="high">40% 이상</button>
+        <button class="band-tab-btn kr-band-tab-btn active" data-band="high">40% 이상</button>
+        <button class="band-tab-btn kr-band-tab-btn" data-band="mid">30~40%</button>
+        <button class="band-tab-btn kr-band-tab-btn" data-band="low">20~30%</button>
       </div>
       <div id="margin-content"><div class="msg">데이터 로딩 중...</div></div>
+    </div>
+
+    <!-- 미국 20-20 page -->
+    <div id="page-us" class="page">
+      <div class="page-header">
+        <div class="page-title">🇺🇸 미국 20-20 (S&amp;P 500)</div>
+        <div class="date-selector">
+          <label>분기 선택:</label>
+          <select id="us-date-select"><option>불러오는 중...</option></select>
+        </div>
+      </div>
+      <div class="band-tab-bar">
+        <button class="band-tab-btn us-band-tab-btn active" data-band="high">40% 이상</button>
+        <button class="band-tab-btn us-band-tab-btn" data-band="mid">30~40%</button>
+        <button class="band-tab-btn us-band-tab-btn" data-band="low">20~30%</button>
+      </div>
+      <div id="us-content"><div class="msg">데이터 로딩 중...</div></div>
     </div>
 
     <!-- 기술적 신호 page -->
@@ -261,6 +282,12 @@ function num(v) {
   if (v == null) return '<span class="v-muted">-</span>';
   return Number(v).toLocaleString();
 }
+
+const BANDS = {
+  high: { label: '40% 이상', min: 40,  max: Infinity },
+  mid:  { label: '30~40%',  min: 30,  max: 40  },
+  low:  { label: '20~30%',  min: 20,  max: 30  },
+};
 
 // ── 20-20 CLUB ──────────────────────────────────────────────────
 let clubLoaded = false;
@@ -312,7 +339,7 @@ function renderClub(data) {
   html += `
   <div class="section">
     <div class="section-header hdr-kr">
-      🇰🇷 한국 (KOSPI + KOSDAQ)
+      🇰🇷 한국 (KOSPI + KOSDAQ) — 영업이익률 순
       <span class="count">${kr.length}개 선별</span>
     </div>
     <div class="table-wrap"><table>
@@ -321,6 +348,7 @@ function renderClub(data) {
         <th>종목코드</th>
         <th>종목명</th>
         <th class="c">시장</th>
+        <th>섹터</th>
         <th class="r">영업이익률</th>
         <th class="r">ROE</th>
         <th class="r">매출 CAGR</th>
@@ -329,7 +357,7 @@ function renderClub(data) {
       <tbody>`;
 
   if (kr.length === 0) {
-    html += '<tr><td colspan="8" class="msg">기준을 충족하는 기업이 없습니다.</td></tr>';
+    html += '<tr><td colspan="9" class="msg">기준을 충족하는 기업이 없습니다.</td></tr>';
   } else {
     kr.forEach(r => {
       const mkt = r.market === 'KOSPI'
@@ -337,11 +365,13 @@ function renderClub(data) {
         : '<span class="badge b-kosdaq">KOSDAQ</span>';
       const grow = r.growth_flag ? '<span class="badge b-growth">고성장</span>' : '';
       const cagrCls = r.growth_flag ? 'v-org' : '';
+      const sector = r.sector || '—';
       html += `<tr class="${r.growth_flag ? 'r-growth' : ''}">
         <td class="c" style="color:#aaa;font-weight:700">${r.rank}</td>
         <td class="code">${r.stock_code}</td>
         <td><strong>${r.corp_name}</strong>${grow}</td>
         <td class="c">${mkt}</td>
+        <td class="td-sector">${sector}</td>
         <td class="r">${pct(r.op_margin, 'v-red')}</td>
         <td class="r">${pct(r.roe, 'v-grn')}</td>
         <td class="r">${pct(r.rev_cagr, cagrCls)}</td>
@@ -351,11 +381,11 @@ function renderClub(data) {
   }
   html += '</tbody></table></div></div>';
 
-  // US section
+  // US section (overview)
   html += `
   <div class="section">
     <div class="section-header hdr-us">
-      🇺🇸 미국 (S&amp;P 500) — TTM 기준
+      🇺🇸 미국 (S&amp;P 500) — TTM 기준 · 영업이익률 순
       <span class="count">${us.length}개 선별</span>
     </div>
     <div class="table-wrap"><table>
@@ -380,7 +410,7 @@ function renderClub(data) {
         <td class="c" style="color:#aaa;font-weight:700">${r.rank}</td>
         <td class="code" style="font-weight:700;color:#c62828">${r.symbol}</td>
         <td><strong>${r.corp_name}</strong>${grow}</td>
-        <td style="color:#666;font-size:12px">${r.sector}</td>
+        <td class="td-sector">${r.sector || '—'}</td>
         <td class="r">${pct(r.op_margin, 'v-red')}</td>
         <td class="r">${pct(r.roe, 'v-grn')}</td>
         <td class="r">${pct(r.rev_cagr, cagrCls)}</td>
@@ -523,16 +553,10 @@ function renderSignals(data) {
   return html;
 }
 
-// ── 마진 구간별 ──────────────────────────────────────────────────
+// ── 한국 마진 구간별 ─────────────────────────────────────────────
 let marginLoaded = false;
 let marginData = null;
-let currentBand = 'low';
-
-const BANDS = {
-  low:  { label: '20~30%',  min: 20,  max: 30  },
-  mid:  { label: '30~40%',  min: 30,  max: 40  },
-  high: { label: '40% 이상', min: 40,  max: Infinity },
-};
+let currentBandKr = 'high';
 
 async function initMargin() {
   if (marginLoaded) return;
@@ -577,11 +601,10 @@ function renderMarginBand() {
   if (!marginData) return;
 
   const { updated_at, bsns_year, kr = [] } = marginData;
-  const band = BANDS[currentBand];
-  const filtered = kr.filter(r => r.op_margin != null && r.op_margin >= band.min && r.op_margin < band.max);
-
-  const kospi  = filtered.filter(r => r.market === 'KOSPI');
-  const kosdaq = filtered.filter(r => r.market === 'KOSDAQ');
+  const band = BANDS[currentBandKr];
+  const filtered = kr
+    .filter(r => r.op_margin != null && r.op_margin >= band.min && r.op_margin < band.max)
+    .sort((a, b) => b.op_margin - a.op_margin);
 
   let html = `
     <div class="meta-info">
@@ -590,24 +613,19 @@ function renderMarginBand() {
       <span class="meta-item"><span class="dot"></span>영업이익률 ${band.label} &amp; ROE ≥ 20%</span>
     </div>`;
 
-  html += renderMarketSection('KOSPI', kospi, '🇰🇷 KOSPI', 'hdr-kospi');
-  html += renderMarketSection('KOSDAQ', kosdaq, '🇰🇷 KOSDAQ', 'hdr-kosdaq');
-
-  el.innerHTML = html;
-}
-
-function renderMarketSection(market, rows, label, hdrCls) {
-  let html = `
+  html += `
   <div class="section">
-    <div class="section-header ${hdrCls}">
-      ${label}
-      <span class="count">${rows.length}개 선별</span>
+    <div class="section-header hdr-kr">
+      🇰🇷 KOSPI + KOSDAQ — ${band.label}
+      <span class="count">${filtered.length}개 선별</span>
     </div>
     <div class="table-wrap"><table>
       <thead><tr>
         <th class="c">#</th>
         <th>종목코드</th>
         <th>종목명</th>
+        <th class="c">시장</th>
+        <th>섹터</th>
         <th class="r">영업이익률</th>
         <th class="r">ROE</th>
         <th class="r">매출 CAGR</th>
@@ -615,16 +633,22 @@ function renderMarketSection(market, rows, label, hdrCls) {
       </tr></thead>
       <tbody>`;
 
-  if (rows.length === 0) {
-    html += '<tr><td colspan="7" class="msg">해당 구간에 종목이 없습니다.</td></tr>';
+  if (filtered.length === 0) {
+    html += '<tr><td colspan="9" class="msg">해당 구간에 종목이 없습니다.</td></tr>';
   } else {
-    rows.forEach((r, i) => {
+    filtered.forEach((r, i) => {
+      const mkt = r.market === 'KOSPI'
+        ? '<span class="badge b-kospi">KOSPI</span>'
+        : '<span class="badge b-kosdaq">KOSDAQ</span>';
       const grow = r.growth_flag ? '<span class="badge b-growth">고성장</span>' : '';
       const cagrCls = r.growth_flag ? 'v-org' : '';
+      const sector = r.sector || '—';
       html += `<tr class="${r.growth_flag ? 'r-growth' : ''}">
         <td class="c" style="color:#aaa;font-weight:700">${i + 1}</td>
         <td class="code">${r.stock_code}</td>
         <td><strong>${r.corp_name}</strong>${grow}</td>
+        <td class="c">${mkt}</td>
+        <td class="td-sector">${sector}</td>
         <td class="r">${pct(r.op_margin, 'v-red')}</td>
         <td class="r">${pct(r.roe, 'v-grn')}</td>
         <td class="r">${pct(r.rev_cagr, cagrCls)}</td>
@@ -633,16 +657,125 @@ function renderMarketSection(market, rows, label, hdrCls) {
     });
   }
   html += '</tbody></table></div></div>';
-  return html;
+  el.innerHTML = html;
 }
 
-// Band tab switching
-document.querySelectorAll('.band-tab-btn').forEach(btn => {
+// KR band tab switching
+document.querySelectorAll('.kr-band-tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.band-tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.kr-band-tab-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    currentBand = btn.dataset.band;
+    currentBandKr = btn.dataset.band;
     if (marginData) renderMarginBand();
+  });
+});
+
+// ── 미국 20-20 ───────────────────────────────────────────────────
+let usLoaded = false;
+let usData = null;
+let currentBandUs = 'high';
+
+async function initUs() {
+  if (usLoaded) return;
+  usLoaded = true;
+  const el = document.getElementById('us-content');
+  try {
+    const index = await fetchJSON('./data/club/index.json');
+    const dates = index.dates || [];
+    const sel = document.getElementById('us-date-select');
+    if (dates.length === 0) {
+      sel.innerHTML = '<option>데이터 없음</option>';
+      el.innerHTML = '<div class="msg">아직 데이터가 없습니다.<div class="hint">분기 스크리닝 실행 후 표시됩니다.</div></div>';
+      return;
+    }
+    sel.innerHTML = dates.map((d, i) =>
+      `<option value="${d}">${d}${i === 0 ? ' (최신)' : ''}</option>`
+    ).join('');
+    sel.addEventListener('change', async () => {
+      await loadUsData(sel.value);
+      renderUsBand();
+    });
+    await loadUsData(dates[0]);
+    renderUsBand();
+  } catch(e) {
+    el.innerHTML = '<div class="msg err">데이터를 불러올 수 없습니다.<div class="hint">분기 스크리닝 실행 후 표시됩니다.</div></div>';
+  }
+}
+
+async function loadUsData(date) {
+  const el = document.getElementById('us-content');
+  el.innerHTML = '<div class="msg">로딩 중...</div>';
+  try {
+    usData = await fetchJSON(`./data/club/${date}.json`);
+  } catch(e) {
+    el.innerHTML = '<div class="msg err">데이터를 불러올 수 없습니다.</div>';
+    usData = null;
+  }
+}
+
+function renderUsBand() {
+  const el = document.getElementById('us-content');
+  if (!usData) return;
+
+  const { updated_at, us = [] } = usData;
+  const band = BANDS[currentBandUs];
+  const filtered = us
+    .filter(r => r.op_margin != null && r.op_margin >= band.min && r.op_margin < band.max)
+    .sort((a, b) => b.op_margin - a.op_margin);
+
+  let html = `
+    <div class="meta-info">
+      <span class="meta-item"><span class="dot"></span>업데이트: ${updated_at}</span>
+      <span class="meta-item"><span class="dot"></span>기준: TTM (최근 12개월)</span>
+      <span class="meta-item"><span class="dot"></span>영업이익률 ${band.label} &amp; ROE ≥ 20%</span>
+    </div>`;
+
+  html += `
+  <div class="section">
+    <div class="section-header hdr-us">
+      🇺🇸 S&amp;P 500 — ${band.label}
+      <span class="count">${filtered.length}개 선별</span>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr>
+        <th class="c">#</th>
+        <th>티커</th>
+        <th>종목명</th>
+        <th>섹터</th>
+        <th class="r">영업이익률</th>
+        <th class="r">ROE</th>
+        <th class="r">매출 CAGR</th>
+      </tr></thead>
+      <tbody>`;
+
+  if (filtered.length === 0) {
+    html += '<tr><td colspan="7" class="msg">해당 구간에 종목이 없습니다.</td></tr>';
+  } else {
+    filtered.forEach((r, i) => {
+      const grow = r.growth_flag ? '<span class="badge b-growth">고성장</span>' : '';
+      const cagrCls = r.growth_flag ? 'v-org' : '';
+      html += `<tr class="${r.growth_flag ? 'r-growth' : ''}">
+        <td class="c" style="color:#aaa;font-weight:700">${i + 1}</td>
+        <td class="code" style="font-weight:700;color:#c62828">${r.symbol}</td>
+        <td><strong>${r.corp_name}</strong>${grow}</td>
+        <td class="td-sector">${r.sector || '—'}</td>
+        <td class="r">${pct(r.op_margin, 'v-red')}</td>
+        <td class="r">${pct(r.roe, 'v-grn')}</td>
+        <td class="r">${pct(r.rev_cagr, cagrCls)}</td>
+      </tr>`;
+    });
+  }
+  html += '</tbody></table></div></div>';
+  el.innerHTML = html;
+}
+
+// US band tab switching
+document.querySelectorAll('.us-band-tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.us-band-tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentBandUs = btn.dataset.band;
+    if (usData) renderUsBand();
   });
 });
 
@@ -650,6 +783,7 @@ document.querySelectorAll('.band-tab-btn').forEach(btn => {
 initClub();
 
 document.querySelector('[data-tab="margin"]').addEventListener('click', initMargin);
+document.querySelector('[data-tab="us"]').addEventListener('click', initUs);
 document.querySelector('[data-tab="signals"]').addEventListener('click', initSignals);
 </script>
 </body>

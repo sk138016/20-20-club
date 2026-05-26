@@ -69,6 +69,75 @@ def _market_cls_via_dart_list(dart):
     return cls_map
 
 
+def get_kr_sector_map(dart, stock_codes, listed_df):
+    """
+    DART company() API 로 선별된 종목코드 목록의 업종 매핑 반환.
+    stock_codes: 조회할 종목코드 리스트 (6자리 문자열)
+    listed_df: dart.corp_codes 기반 DataFrame (stock_code, corp_code 포함)
+    업종코드(KSIC)를 간소화된 한국어 섹터명으로 변환.
+    """
+    KSIC_SECTOR = {
+        "261": "반도체", "262": "전자부품", "263": "통신장비",
+        "264": "소비자가전", "265": "의료기기", "266": "반도체",
+        "01": "농업", "02": "임업", "03": "어업",
+        "05": "석탄/석유", "06": "석탄/석유", "07": "금속광업",
+        "08": "비금속광업", "10": "식품", "11": "음료", "12": "담배",
+        "13": "섬유", "14": "의류/패션", "15": "가죽/신발",
+        "16": "목재", "17": "제지", "18": "인쇄", "19": "석유화학",
+        "20": "화학", "21": "제약", "22": "고무/플라스틱",
+        "23": "비금속광물", "24": "철강/금속", "25": "금속제품",
+        "26": "전자/반도체", "27": "전기장비", "28": "기계",
+        "29": "자동차", "30": "기타운송", "31": "가구",
+        "32": "기타제조", "33": "산업기계수리", "35": "전기/가스",
+        "41": "건설", "42": "건설", "45": "자동차판매",
+        "46": "도소매", "47": "소매", "49": "육상운송",
+        "50": "수상운송", "51": "항공운송", "52": "물류",
+        "55": "숙박", "56": "음식점", "58": "IT소프트웨어",
+        "59": "영상/방송", "60": "방송", "61": "통신",
+        "62": "IT서비스", "63": "인터넷", "64": "금융",
+        "65": "보험", "66": "금융서비스", "68": "부동산",
+        "70": "연구개발", "71": "전문서비스", "72": "과학기술",
+        "73": "광고", "74": "기타전문서비스",
+        "78": "고용서비스", "79": "여행", "80": "경비",
+        "82": "사무지원", "85": "교육",
+        "86": "의료/병원", "87": "사회복지",
+        "90": "예술/창작", "91": "스포츠/오락",
+    }
+
+    stock_to_corp = dict(
+        zip(
+            listed_df["stock_code"].astype(str).str.zfill(6),
+            listed_df["corp_code"],
+        )
+    )
+
+    sector_map = {}
+    logger.info(f"섹터 조회 중 ({len(stock_codes)}개 종목)...")
+    for stock_code in stock_codes:
+        corp_code = stock_to_corp.get(str(stock_code).zfill(6))
+        if not corp_code:
+            continue
+        try:
+            time.sleep(0.2)
+            info = dart.company(corp_code)
+            induty = str(info.get("induty_code", "") or "").strip()
+            if not induty:
+                continue
+            sector = None
+            for prefix_len in (3, 2):
+                key = induty[:prefix_len]
+                if key in KSIC_SECTOR:
+                    sector = KSIC_SECTOR[key]
+                    break
+            if sector:
+                sector_map[str(stock_code).zfill(6)] = sector
+        except Exception as e:
+            logger.debug(f"섹터 조회 실패 ({stock_code}): {e}")
+
+    logger.info(f"섹터 매핑 완료: {len(sector_map)}/{len(stock_codes)}개")
+    return sector_map
+
+
 def enrich_with_market_type(dart, listed_df):
     """시장 구분(KOSPI/KOSDAQ) 매핑. FDR 우선, 실패 시 DART list API 폴백."""
     kospi_tickers, kosdaq_tickers = set(), set()

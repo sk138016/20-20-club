@@ -52,6 +52,7 @@ def _save_club_for_web(result_df, bsns_year, us_result_df=None):
             "stock_code": str(row["stock_code"]).zfill(6),
             "corp_name": str(row["corp_name"]),
             "market": str(row["market"]),
+            "sector": str(row.get("sector", "") or ""),
             "op_margin": float(row["op_margin"]),
             "roe": float(row["roe"]),
             "rev_cagr": _safe_float(row.get("rev_cagr")),
@@ -129,6 +130,7 @@ def main():
         determine_target_year,
         fetch_all_financials,
         fetch_past_revenues,
+        get_kr_sector_map,
     )
     from calculator import screen_companies, add_revenue_growth
     from config import REVENUE_GROWTH_YEARS
@@ -162,6 +164,11 @@ def main():
         dart, result_df["corp_code"].tolist(), bsns_year, years_back=REVENUE_GROWTH_YEARS
     )
     result_df = add_revenue_growth(result_df, past_revenues, bsns_year)
+
+    logger.info("[5.8/7] 섹터 정보 보강 (DART)")
+    screened_codes = result_df["stock_code"].astype(str).str.zfill(6).tolist()
+    sector_map = get_kr_sector_map(dart, screened_codes, listed_df)
+    result_df["sector"] = result_df["stock_code"].astype(str).str.zfill(6).map(sector_map).fillna("")
 
     logger.info("[6/7] S&P 500 스크리닝 (미국 시장)")
     us_result_df = screen_sp500()
