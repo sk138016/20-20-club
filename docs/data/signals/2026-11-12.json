@@ -1,0 +1,3021 @@
+{
+  "A": [
+    {
+      "code": "000590",
+      "name": "CS홀딩스",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "bandwidth_pct": 7.23,
+      "upper_band": 74758.0,
+      "close": 74900
+    },
+    {
+      "code": "000860",
+      "name": "강남제비스코",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "bandwidth_pct": 8.56,
+      "upper_band": 12833.0,
+      "close": 13180
+    },
+    {
+      "code": "001810",
+      "name": "무림SP",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "bandwidth_pct": 13.98,
+      "upper_band": 1085.0,
+      "close": 1118
+    },
+    {
+      "code": "003850",
+      "name": "보령",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "bandwidth_pct": 8.71,
+      "upper_band": 8846.0,
+      "close": 8850
+    },
+    {
+      "code": "016920",
+      "name": "카스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "bandwidth_pct": 6.24,
+      "upper_band": 1053.0,
+      "close": 1071
+    },
+    {
+      "code": "017390",
+      "name": "서울가스",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "bandwidth_pct": 8.5,
+      "upper_band": 54699.0,
+      "close": 54900
+    },
+    {
+      "code": "023410",
+      "name": "유진기업",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "bandwidth_pct": 14.7,
+      "upper_band": 3443.0,
+      "close": 3465
+    },
+    {
+      "code": "024070",
+      "name": "WISCOM",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "bandwidth_pct": 14.28,
+      "upper_band": 1914.0,
+      "close": 1927
+    },
+    {
+      "code": "034120",
+      "name": "SBS",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "bandwidth_pct": 7.71,
+      "upper_band": 11615.0,
+      "close": 11660
+    },
+    {
+      "code": "036460",
+      "name": "한국가스공사",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "bandwidth_pct": 6.88,
+      "upper_band": 38058.0,
+      "close": 38500
+    },
+    {
+      "code": "039130",
+      "name": "하나투어",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "bandwidth_pct": 13.28,
+      "upper_band": 30428.0,
+      "close": 30450
+    },
+    {
+      "code": "058860",
+      "name": "KTis",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "bandwidth_pct": 8.58,
+      "upper_band": 2602.0,
+      "close": 2640
+    },
+    {
+      "code": "090355",
+      "name": "노루페인트우",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "bandwidth_pct": 6.07,
+      "upper_band": 12432.0,
+      "close": 12450
+    },
+    {
+      "code": "220180",
+      "name": "폴라리스AI핸디",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "bandwidth_pct": 11.13,
+      "upper_band": 1411.0,
+      "close": 1440
+    },
+    {
+      "code": "267290",
+      "name": "경동도시가스",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "bandwidth_pct": 6.33,
+      "upper_band": 21430.0,
+      "close": 21450
+    },
+    {
+      "code": "280360",
+      "name": "롯데웰푸드",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "bandwidth_pct": 11.24,
+      "upper_band": 128068.0,
+      "close": 130600
+    },
+    {
+      "code": "339770",
+      "name": "교촌에프앤비",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "bandwidth_pct": 8.16,
+      "upper_band": 3939.0,
+      "close": 3940
+    },
+    {
+      "code": "363280",
+      "name": "티와이홀딩스",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "bandwidth_pct": 11.2,
+      "upper_band": 1935.0,
+      "close": 1985
+    },
+    {
+      "code": "419120",
+      "name": "산돌",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "bandwidth_pct": 14.35,
+      "upper_band": 2530.0,
+      "close": 2650
+    }
+  ],
+  "B": [
+    {
+      "code": "052400",
+      "name": "코나아이",
+      "market": "KOSDAQ",
+      "is_2020_club": true,
+      "lower_band": 19048.0,
+      "close": 18540
+    },
+    {
+      "code": "278470",
+      "name": "에이피알",
+      "market": "KOSPI",
+      "is_2020_club": true,
+      "lower_band": 239749.0,
+      "close": 239000
+    },
+    {
+      "code": "336570",
+      "name": "원텍",
+      "market": "KOSDAQ",
+      "is_2020_club": true,
+      "lower_band": 3547.0,
+      "close": 3515
+    },
+    {
+      "code": "458870",
+      "name": "씨어스",
+      "market": "KOSDAQ",
+      "is_2020_club": true,
+      "lower_band": 16823.0,
+      "close": 13890
+    },
+    {
+      "code": "462870",
+      "name": "시프트업",
+      "market": "KOSPI",
+      "is_2020_club": true,
+      "lower_band": 28740.0,
+      "close": 26500
+    },
+    {
+      "code": "000150",
+      "name": "두산",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 729388.0,
+      "close": 662000
+    },
+    {
+      "code": "000155",
+      "name": "두산우",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 266167.0,
+      "close": 244000
+    },
+    {
+      "code": "000157",
+      "name": "두산2우B",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 228129.0,
+      "close": 207500
+    },
+    {
+      "code": "000230",
+      "name": "일동홀딩스",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 5436.0,
+      "close": 5410
+    },
+    {
+      "code": "000240",
+      "name": "한국앤컴퍼니",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 22353.0,
+      "close": 21900
+    },
+    {
+      "code": "000440",
+      "name": "중앙에너비스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 10287.0,
+      "close": 9770
+    },
+    {
+      "code": "000480",
+      "name": "CR홀딩스",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 4013.0,
+      "close": 3915
+    },
+    {
+      "code": "0004V0",
+      "name": "엔비알모션",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3897.0,
+      "close": 3855
+    },
+    {
+      "code": "000810",
+      "name": "삼성화재",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 571958.0,
+      "close": 529000
+    },
+    {
+      "code": "000815",
+      "name": "삼성화재우",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 364380.0,
+      "close": 360000
+    },
+    {
+      "code": "000910",
+      "name": "유니온",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 2453.0,
+      "close": 2400
+    },
+    {
+      "code": "001270",
+      "name": "부국증권",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 39112.0,
+      "close": 38250
+    },
+    {
+      "code": "001390",
+      "name": "KG케미칼",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 3515.0,
+      "close": 3215
+    },
+    {
+      "code": "001780",
+      "name": "알루코",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 1331.0,
+      "close": 1269
+    },
+    {
+      "code": "0017J0",
+      "name": "세미티에스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2004.0,
+      "close": 2000
+    },
+    {
+      "code": "002355",
+      "name": "넥센타이어1우B",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 3747.0,
+      "close": 3670
+    },
+    {
+      "code": "002450",
+      "name": "삼익악기",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 1010.0,
+      "close": 1003
+    },
+    {
+      "code": "002690",
+      "name": "동일제강",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 1110.0,
+      "close": 995
+    },
+    {
+      "code": "0030R0",
+      "name": "대신밸류리츠",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 3499.0,
+      "close": 3415
+    },
+    {
+      "code": "003280",
+      "name": "흥아해운",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 1541.0,
+      "close": 1538
+    },
+    {
+      "code": "003310",
+      "name": "대주산업",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1404.0,
+      "close": 1337
+    },
+    {
+      "code": "003520",
+      "name": "영진약품",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 835.0,
+      "close": 783
+    },
+    {
+      "code": "003540",
+      "name": "대신증권",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 21251.0,
+      "close": 20600
+    },
+    {
+      "code": "003545",
+      "name": "대신증권우",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 18082.0,
+      "close": 17720
+    },
+    {
+      "code": "003547",
+      "name": "대신증권2우B",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 17501.0,
+      "close": 17220
+    },
+    {
+      "code": "003620",
+      "name": "KG모빌리티",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 2233.0,
+      "close": 2125
+    },
+    {
+      "code": "003690",
+      "name": "코리안리",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 13154.0,
+      "close": 13140
+    },
+    {
+      "code": "004000",
+      "name": "롯데정밀화학",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 33780.0,
+      "close": 33650
+    },
+    {
+      "code": "004140",
+      "name": "동방",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 1504.0,
+      "close": 1452
+    },
+    {
+      "code": "004360",
+      "name": "세방",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 12215.0,
+      "close": 12010
+    },
+    {
+      "code": "004365",
+      "name": "세방우",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 8173.0,
+      "close": 8050
+    },
+    {
+      "code": "005745",
+      "name": "크라운해태홀딩스우",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 4656.0,
+      "close": 4595
+    },
+    {
+      "code": "005860",
+      "name": "한일사료",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2017.0,
+      "close": 2000
+    },
+    {
+      "code": "006040",
+      "name": "동원산업",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 32808.0,
+      "close": 32700
+    },
+    {
+      "code": "007160",
+      "name": "사조산업",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 39070.0,
+      "close": 38750
+    },
+    {
+      "code": "007310",
+      "name": "오뚜기",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 301891.0,
+      "close": 299500
+    },
+    {
+      "code": "007570",
+      "name": "일양약품",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 6660.0,
+      "close": 6590
+    },
+    {
+      "code": "007575",
+      "name": "일양약품우",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 6643.0,
+      "close": 6640
+    },
+    {
+      "code": "008470",
+      "name": "부스타",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1360.0,
+      "close": 1260
+    },
+    {
+      "code": "009150",
+      "name": "삼성전기",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 928663.0,
+      "close": 873000
+    },
+    {
+      "code": "009155",
+      "name": "삼성전기우",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 333494.0,
+      "close": 321500
+    },
+    {
+      "code": "010120",
+      "name": "LS ELECTRIC",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 130872.0,
+      "close": 122800
+    },
+    {
+      "code": "010820",
+      "name": "퍼스텍",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 4478.0,
+      "close": 4445
+    },
+    {
+      "code": "010950",
+      "name": "S-Oil",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 108547.0,
+      "close": 101800
+    },
+    {
+      "code": "011230",
+      "name": "삼화전자",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 2012.0,
+      "close": 1940
+    },
+    {
+      "code": "011420",
+      "name": "갤럭시아에스엠",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 1127.0,
+      "close": 1119
+    },
+    {
+      "code": "011780",
+      "name": "금호석유화학",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 100062.0,
+      "close": 97800
+    },
+    {
+      "code": "011785",
+      "name": "금호석유화학우",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 42351.0,
+      "close": 40250
+    },
+    {
+      "code": "0117P0",
+      "name": "피스피스스튜디오",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3876.0,
+      "close": 3530
+    },
+    {
+      "code": "012160",
+      "name": "영흥",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 1670.0,
+      "close": 1606
+    },
+    {
+      "code": "012800",
+      "name": "대창",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 952.0,
+      "close": 945
+    },
+    {
+      "code": "013810",
+      "name": "스페코",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1282.0,
+      "close": 1209
+    },
+    {
+      "code": "014620",
+      "name": "성광벤드",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 21310.0,
+      "close": 20600
+    },
+    {
+      "code": "014710",
+      "name": "사조씨푸드",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 8801.0,
+      "close": 8480
+    },
+    {
+      "code": "015360",
+      "name": "INVENI",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 13430.0,
+      "close": 13140
+    },
+    {
+      "code": "016600",
+      "name": "큐캐피탈",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1821.0,
+      "close": 1813
+    },
+    {
+      "code": "018120",
+      "name": "진로발효",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 16244.0,
+      "close": 16190
+    },
+    {
+      "code": "018250",
+      "name": "애경산업",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 10233.0,
+      "close": 10080
+    },
+    {
+      "code": "018680",
+      "name": "서울제약",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1744.0,
+      "close": 1730
+    },
+    {
+      "code": "018880",
+      "name": "한온시스템",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 3067.0,
+      "close": 2985
+    },
+    {
+      "code": "019550",
+      "name": "SBI인베스트먼트",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 566.0,
+      "close": 507
+    },
+    {
+      "code": "020180",
+      "name": "대신정보통신",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3592.0,
+      "close": 3555
+    },
+    {
+      "code": "020710",
+      "name": "시공테크",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3219.0,
+      "close": 3160
+    },
+    {
+      "code": "023770",
+      "name": "플레이위드",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1947.0,
+      "close": 1904
+    },
+    {
+      "code": "024740",
+      "name": "한일단조",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1896.0,
+      "close": 1891
+    },
+    {
+      "code": "024800",
+      "name": "유성티엔에스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3779.0,
+      "close": 3610
+    },
+    {
+      "code": "024880",
+      "name": "케이피에프",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3273.0,
+      "close": 3090
+    },
+    {
+      "code": "025750",
+      "name": "한솔홈데코",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 1621.0,
+      "close": 1512
+    },
+    {
+      "code": "025820",
+      "name": "이구산업",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 3304.0,
+      "close": 3255
+    },
+    {
+      "code": "027970",
+      "name": "한국제지",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 1843.0,
+      "close": 1813
+    },
+    {
+      "code": "030520",
+      "name": "한컴",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 14620.0,
+      "close": 14390
+    },
+    {
+      "code": "032800",
+      "name": "판타지오",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1342.0,
+      "close": 1336
+    },
+    {
+      "code": "033050",
+      "name": "제이엠아이",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3571.0,
+      "close": 3465
+    },
+    {
+      "code": "033200",
+      "name": "모아텍",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2191.0,
+      "close": 2140
+    },
+    {
+      "code": "033270",
+      "name": "유나이티드제약",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 15979.0,
+      "close": 15670
+    },
+    {
+      "code": "033500",
+      "name": "동성화인텍",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 11649.0,
+      "close": 11550
+    },
+    {
+      "code": "034020",
+      "name": "두산에너빌리티",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 47256.0,
+      "close": 46650
+    },
+    {
+      "code": "034830",
+      "name": "한국토지신탁",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 977.0,
+      "close": 975
+    },
+    {
+      "code": "034940",
+      "name": "조아제약",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1523.0,
+      "close": 1508
+    },
+    {
+      "code": "035810",
+      "name": "이지홀딩스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4085.0,
+      "close": 4050
+    },
+    {
+      "code": "036220",
+      "name": "오상헬스케어",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4857.0,
+      "close": 4435
+    },
+    {
+      "code": "036530",
+      "name": "SNT홀딩스",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 41122.0,
+      "close": 37900
+    },
+    {
+      "code": "036570",
+      "name": "NC",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 190043.0,
+      "close": 188700
+    },
+    {
+      "code": "037330",
+      "name": "인지디스플레",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3018.0,
+      "close": 2955
+    },
+    {
+      "code": "037560",
+      "name": "LG헬로비전",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 1337.0,
+      "close": 1336
+    },
+    {
+      "code": "037760",
+      "name": "쎄니트",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2297.0,
+      "close": 2290
+    },
+    {
+      "code": "038070",
+      "name": "서린바이오",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3400.0,
+      "close": 3340
+    },
+    {
+      "code": "038110",
+      "name": "에코플라스틱",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1725.0,
+      "close": 1686
+    },
+    {
+      "code": "038880",
+      "name": "아이에이",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2648.0,
+      "close": 2590
+    },
+    {
+      "code": "039570",
+      "name": "HDC랩스",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 7044.0,
+      "close": 7030
+    },
+    {
+      "code": "041830",
+      "name": "인바디",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 39534.0,
+      "close": 39400
+    },
+    {
+      "code": "042520",
+      "name": "한스바이오메드",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 15079.0,
+      "close": 13630
+    },
+    {
+      "code": "043610",
+      "name": "KT지니뮤직",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4195.0,
+      "close": 4160
+    },
+    {
+      "code": "044780",
+      "name": "에이치케이",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1077.0,
+      "close": 1039
+    },
+    {
+      "code": "044960",
+      "name": "이글벳",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2899.0,
+      "close": 2875
+    },
+    {
+      "code": "045060",
+      "name": "오공",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1994.0,
+      "close": 1955
+    },
+    {
+      "code": "046390",
+      "name": "삼화네트웍스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1825.0,
+      "close": 1792
+    },
+    {
+      "code": "047820",
+      "name": "초록뱀미디어",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2738.0,
+      "close": 2735
+    },
+    {
+      "code": "048830",
+      "name": "엔피케이",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 878.0,
+      "close": 846
+    },
+    {
+      "code": "049960",
+      "name": "쎌바이오텍",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 14250.0,
+      "close": 13800
+    },
+    {
+      "code": "051490",
+      "name": "나라엠앤디",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2276.0,
+      "close": 2200
+    },
+    {
+      "code": "051600",
+      "name": "한전KPS",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 38780.0,
+      "close": 35750
+    },
+    {
+      "code": "051780",
+      "name": "큐로홀딩스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1956.0,
+      "close": 1928
+    },
+    {
+      "code": "051980",
+      "name": "중앙첨단소재",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 5857.0,
+      "close": 4945
+    },
+    {
+      "code": "052300",
+      "name": "오션인더블유",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1203.0,
+      "close": 1198
+    },
+    {
+      "code": "052330",
+      "name": "코텍",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 9004.0,
+      "close": 8840
+    },
+    {
+      "code": "052420",
+      "name": "오성첨단소재",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 7031.0,
+      "close": 6980
+    },
+    {
+      "code": "052600",
+      "name": "한네트",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2426.0,
+      "close": 2410
+    },
+    {
+      "code": "053700",
+      "name": "삼보모터스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3405.0,
+      "close": 3355
+    },
+    {
+      "code": "054090",
+      "name": "삼진엘앤디",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 847.0,
+      "close": 831
+    },
+    {
+      "code": "054670",
+      "name": "대한뉴팜",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 5017.0,
+      "close": 5010
+    },
+    {
+      "code": "056730",
+      "name": "CNT85",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 921.0,
+      "close": 895
+    },
+    {
+      "code": "057030",
+      "name": "YBM넷",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1584.0,
+      "close": 1389
+    },
+    {
+      "code": "057680",
+      "name": "티사이언티픽",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1281.0,
+      "close": 1256
+    },
+    {
+      "code": "061090",
+      "name": "세나테크놀로지",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 24928.0,
+      "close": 24550
+    },
+    {
+      "code": "064520",
+      "name": "테크엘",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1340.0,
+      "close": 1312
+    },
+    {
+      "code": "064850",
+      "name": "에프앤가이드",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 12825.0,
+      "close": 12680
+    },
+    {
+      "code": "066130",
+      "name": "하츠",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3048.0,
+      "close": 3035
+    },
+    {
+      "code": "066430",
+      "name": "아이로보틱스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1637.0,
+      "close": 1565
+    },
+    {
+      "code": "066620",
+      "name": "국보디자인",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 21881.0,
+      "close": 21450
+    },
+    {
+      "code": "066980",
+      "name": "한성크린텍",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1100.0,
+      "close": 1099
+    },
+    {
+      "code": "067000",
+      "name": "조이시티",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 961.0,
+      "close": 939
+    },
+    {
+      "code": "068100",
+      "name": "케이웨더",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2176.0,
+      "close": 2160
+    },
+    {
+      "code": "069140",
+      "name": "누리플랜",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1537.0,
+      "close": 1503
+    },
+    {
+      "code": "071050",
+      "name": "한국금융지주",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 127865.0,
+      "close": 123800
+    },
+    {
+      "code": "071055",
+      "name": "한국금융지주우",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 112405.0,
+      "close": 103400
+    },
+    {
+      "code": "071670",
+      "name": "에이테크솔루션",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4303.0,
+      "close": 4145
+    },
+    {
+      "code": "071840",
+      "name": "롯데하이마트",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 5458.0,
+      "close": 5370
+    },
+    {
+      "code": "071950",
+      "name": "코아스",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 921.0,
+      "close": 913
+    },
+    {
+      "code": "072130",
+      "name": "유엔젤",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 4112.0,
+      "close": 4045
+    },
+    {
+      "code": "075130",
+      "name": "플랜티넷",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1837.0,
+      "close": 1761
+    },
+    {
+      "code": "075180",
+      "name": "새론오토모티브",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 2846.0,
+      "close": 2835
+    },
+    {
+      "code": "079430",
+      "name": "현대리바트",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 5066.0,
+      "close": 5020
+    },
+    {
+      "code": "079980",
+      "name": "휴비스",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 1713.0,
+      "close": 1689
+    },
+    {
+      "code": "080010",
+      "name": "이상네트웍스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 6489.0,
+      "close": 6370
+    },
+    {
+      "code": "080470",
+      "name": "성창오토텍",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2508.0,
+      "close": 2440
+    },
+    {
+      "code": "081150",
+      "name": "티플랙스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2220.0,
+      "close": 2170
+    },
+    {
+      "code": "082270",
+      "name": "젬백스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 8129.0,
+      "close": 8120
+    },
+    {
+      "code": "082740",
+      "name": "한화엔진",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 27165.0,
+      "close": 26850
+    },
+    {
+      "code": "083640",
+      "name": "인콘",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4477.0,
+      "close": 4270
+    },
+    {
+      "code": "084730",
+      "name": "팅크웨어",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 5836.0,
+      "close": 5670
+    },
+    {
+      "code": "084850",
+      "name": "아이티엠반도체",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 5059.0,
+      "close": 4940
+    },
+    {
+      "code": "086820",
+      "name": "바이오솔루션",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4877.0,
+      "close": 4720
+    },
+    {
+      "code": "087600",
+      "name": "픽셀플러스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3416.0,
+      "close": 3390
+    },
+    {
+      "code": "088340",
+      "name": "유라클",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4964.0,
+      "close": 4950
+    },
+    {
+      "code": "088390",
+      "name": "이녹스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 5915.0,
+      "close": 5840
+    },
+    {
+      "code": "089850",
+      "name": "유비벨록스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3943.0,
+      "close": 3935
+    },
+    {
+      "code": "090080",
+      "name": "평화산업",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 837.0,
+      "close": 821
+    },
+    {
+      "code": "091700",
+      "name": "파트론",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4169.0,
+      "close": 3840
+    },
+    {
+      "code": "092460",
+      "name": "한라IMS",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 13092.0,
+      "close": 12400
+    },
+    {
+      "code": "093050",
+      "name": "LF",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 20922.0,
+      "close": 20600
+    },
+    {
+      "code": "093190",
+      "name": "빅솔론",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 7707.0,
+      "close": 7700
+    },
+    {
+      "code": "093920",
+      "name": "서원인텍",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4531.0,
+      "close": 4525
+    },
+    {
+      "code": "095660",
+      "name": "네오위즈",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 16746.0,
+      "close": 16250
+    },
+    {
+      "code": "097520",
+      "name": "엠씨넥스",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 16001.0,
+      "close": 15540
+    },
+    {
+      "code": "097870",
+      "name": "효성오앤비",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3901.0,
+      "close": 3870
+    },
+    {
+      "code": "099190",
+      "name": "아이센스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 13672.0,
+      "close": 13460
+    },
+    {
+      "code": "100700",
+      "name": "세운메디칼",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2209.0,
+      "close": 2205
+    },
+    {
+      "code": "101530",
+      "name": "해태제과식품",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 4807.0,
+      "close": 4770
+    },
+    {
+      "code": "103840",
+      "name": "우양",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1274.0,
+      "close": 1272
+    },
+    {
+      "code": "108320",
+      "name": "LX세미콘",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 25987.0,
+      "close": 24000
+    },
+    {
+      "code": "108670",
+      "name": "LX하우시스",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 27008.0,
+      "close": 25250
+    },
+    {
+      "code": "109740",
+      "name": "디에스케이",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3199.0,
+      "close": 3000
+    },
+    {
+      "code": "110790",
+      "name": "크리스에프앤씨",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2748.0,
+      "close": 2710
+    },
+    {
+      "code": "114090",
+      "name": "GKL",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 7885.0,
+      "close": 7760
+    },
+    {
+      "code": "114630",
+      "name": "폴라리스우노",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1166.0,
+      "close": 1155
+    },
+    {
+      "code": "118000",
+      "name": "메타케어",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 922.0,
+      "close": 826
+    },
+    {
+      "code": "120030",
+      "name": "조선선재",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 72087.0,
+      "close": 71600
+    },
+    {
+      "code": "120110",
+      "name": "코오롱인더",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 37564.0,
+      "close": 34800
+    },
+    {
+      "code": "120115",
+      "name": "코오롱인더우",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 21804.0,
+      "close": 20700
+    },
+    {
+      "code": "123570",
+      "name": "이엠넷",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1502.0,
+      "close": 1453
+    },
+    {
+      "code": "129890",
+      "name": "앱코",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 862.0,
+      "close": 842
+    },
+    {
+      "code": "133820",
+      "name": "화인베스틸",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 864.0,
+      "close": 845
+    },
+    {
+      "code": "136490",
+      "name": "선진",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 9242.0,
+      "close": 8930
+    },
+    {
+      "code": "138040",
+      "name": "메리츠금융지주",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 113174.0,
+      "close": 112800
+    },
+    {
+      "code": "139480",
+      "name": "이마트",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 65957.0,
+      "close": 62800
+    },
+    {
+      "code": "142760",
+      "name": "모아라이프플러스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 129.0,
+      "close": 117
+    },
+    {
+      "code": "143160",
+      "name": "아이디스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 13873.0,
+      "close": 13440
+    },
+    {
+      "code": "143240",
+      "name": "사람인",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 15404.0,
+      "close": 14450
+    },
+    {
+      "code": "144510",
+      "name": "지씨셀",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 10314.0,
+      "close": 10130
+    },
+    {
+      "code": "151860",
+      "name": "KG에코솔루션",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4652.0,
+      "close": 4230
+    },
+    {
+      "code": "155660",
+      "name": "DSR",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 3971.0,
+      "close": 3965
+    },
+    {
+      "code": "159580",
+      "name": "제로투세븐",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1804.0,
+      "close": 1733
+    },
+    {
+      "code": "166480",
+      "name": "코아스템켐온",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1493.0,
+      "close": 1420
+    },
+    {
+      "code": "171010",
+      "name": "램테크놀러지",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2251.0,
+      "close": 2240
+    },
+    {
+      "code": "171120",
+      "name": "라이온켐텍",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1919.0,
+      "close": 1902
+    },
+    {
+      "code": "177900",
+      "name": "쓰리에이로직스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2748.0,
+      "close": 2650
+    },
+    {
+      "code": "179290",
+      "name": "엠아이텍",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3816.0,
+      "close": 3805
+    },
+    {
+      "code": "179530",
+      "name": "애드바이오텍",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1216.0,
+      "close": 769
+    },
+    {
+      "code": "187220",
+      "name": "디티앤씨",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1633.0,
+      "close": 1632
+    },
+    {
+      "code": "195990",
+      "name": "루트K",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 886.0,
+      "close": 880
+    },
+    {
+      "code": "196300",
+      "name": "HLB펩",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3422.0,
+      "close": 3400
+    },
+    {
+      "code": "196700",
+      "name": "웹스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 971.0,
+      "close": 794
+    },
+    {
+      "code": "200230",
+      "name": "텔콘RF제약",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1911.0,
+      "close": 1878
+    },
+    {
+      "code": "204020",
+      "name": "그리티",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1680.0,
+      "close": 1659
+    },
+    {
+      "code": "205100",
+      "name": "엑셈",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 5829.0,
+      "close": 5590
+    },
+    {
+      "code": "210980",
+      "name": "SK디앤디",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 1929.0,
+      "close": 1893
+    },
+    {
+      "code": "213500",
+      "name": "한솔제지",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 6425.0,
+      "close": 6330
+    },
+    {
+      "code": "215090",
+      "name": "솔디펜스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1156.0,
+      "close": 1137
+    },
+    {
+      "code": "215100",
+      "name": "로보로보",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3102.0,
+      "close": 3090
+    },
+    {
+      "code": "215380",
+      "name": "콜마바이오텍",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1897.0,
+      "close": 1845
+    },
+    {
+      "code": "215790",
+      "name": "이노인스트루먼트",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2049.0,
+      "close": 1965
+    },
+    {
+      "code": "219420",
+      "name": "링크제니시스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2577.0,
+      "close": 2495
+    },
+    {
+      "code": "222110",
+      "name": "팬젠",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4134.0,
+      "close": 3990
+    },
+    {
+      "code": "238090",
+      "name": "앤디포스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1364.0,
+      "close": 1315
+    },
+    {
+      "code": "238490",
+      "name": "힘스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1857.0,
+      "close": 1692
+    },
+    {
+      "code": "251630",
+      "name": "브이원텍",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3147.0,
+      "close": 3140
+    },
+    {
+      "code": "256630",
+      "name": "포인트엔지니어링",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3852.0,
+      "close": 3820
+    },
+    {
+      "code": "260930",
+      "name": "씨티케이",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1887.0,
+      "close": 1723
+    },
+    {
+      "code": "263020",
+      "name": "디케이앤디",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2788.0,
+      "close": 2720
+    },
+    {
+      "code": "263750",
+      "name": "펄어비스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 30128.0,
+      "close": 28800
+    },
+    {
+      "code": "271830",
+      "name": "팸텍",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 818.0,
+      "close": 816
+    },
+    {
+      "code": "275630",
+      "name": "에스에스알",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2777.0,
+      "close": 2700
+    },
+    {
+      "code": "277410",
+      "name": "인산가",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4808.0,
+      "close": 4615
+    },
+    {
+      "code": "288180",
+      "name": "케이피항공산업",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 5476.0,
+      "close": 5370
+    },
+    {
+      "code": "288620",
+      "name": "에스프리즘",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3087.0,
+      "close": 3020
+    },
+    {
+      "code": "290520",
+      "name": "신도기연",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1354.0,
+      "close": 1325
+    },
+    {
+      "code": "290720",
+      "name": "푸드나무",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1013.0,
+      "close": 960
+    },
+    {
+      "code": "297570",
+      "name": "아틀라스링크",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3124.0,
+      "close": 3020
+    },
+    {
+      "code": "298540",
+      "name": "더네이쳐홀딩스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 5975.0,
+      "close": 5950
+    },
+    {
+      "code": "303360",
+      "name": "프로티아",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2936.0,
+      "close": 2765
+    },
+    {
+      "code": "303810",
+      "name": "동국생명과학",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1822.0,
+      "close": 1787
+    },
+    {
+      "code": "307930",
+      "name": "컴퍼니케이",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4664.0,
+      "close": 4625
+    },
+    {
+      "code": "309960",
+      "name": "LB인베스트먼트",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3563.0,
+      "close": 3435
+    },
+    {
+      "code": "311390",
+      "name": "네오크레마",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2064.0,
+      "close": 1956
+    },
+    {
+      "code": "311690",
+      "name": "CJ 바이오사이언스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3392.0,
+      "close": 3345
+    },
+    {
+      "code": "317690",
+      "name": "퀀타매트릭스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1840.0,
+      "close": 1780
+    },
+    {
+      "code": "318000",
+      "name": "KBG",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2311.0,
+      "close": 2260
+    },
+    {
+      "code": "318010",
+      "name": "팜스빌",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3346.0,
+      "close": 3285
+    },
+    {
+      "code": "318160",
+      "name": "셀바이오휴먼텍",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 5403.0,
+      "close": 5320
+    },
+    {
+      "code": "319660",
+      "name": "피에스케이",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 89320.0,
+      "close": 89000
+    },
+    {
+      "code": "322510",
+      "name": "제이엘케이",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4145.0,
+      "close": 3960
+    },
+    {
+      "code": "330590",
+      "name": "롯데리츠",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 3465.0,
+      "close": 3430
+    },
+    {
+      "code": "330730",
+      "name": "스톤브릿지벤처스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4099.0,
+      "close": 4050
+    },
+    {
+      "code": "333620",
+      "name": "엔시스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4028.0,
+      "close": 3960
+    },
+    {
+      "code": "33637L",
+      "name": "솔루스첨단소재2우B",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 1785.0,
+      "close": 1780
+    },
+    {
+      "code": "338100",
+      "name": "NH프라임리츠",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 3642.0,
+      "close": 3610
+    },
+    {
+      "code": "340360",
+      "name": "다보링크",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 447.0,
+      "close": 376
+    },
+    {
+      "code": "348340",
+      "name": "뉴로메카",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 14289.0,
+      "close": 14230
+    },
+    {
+      "code": "350520",
+      "name": "이지스레지던스리츠",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 2939.0,
+      "close": 2935
+    },
+    {
+      "code": "351330",
+      "name": "이삭엔지니어링",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2647.0,
+      "close": 2610
+    },
+    {
+      "code": "353810",
+      "name": "이지바이오",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 5028.0,
+      "close": 4965
+    },
+    {
+      "code": "357120",
+      "name": "코람코라이프인프라리츠",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 3477.0,
+      "close": 3235
+    },
+    {
+      "code": "357230",
+      "name": "에이치피오",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1916.0,
+      "close": 1897
+    },
+    {
+      "code": "357250",
+      "name": "미래에셋맵스리츠",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 1565.0,
+      "close": 1556
+    },
+    {
+      "code": "365550",
+      "name": "ESR켄달스퀘어리츠",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 2815.0,
+      "close": 2685
+    },
+    {
+      "code": "370090",
+      "name": "퓨런티어",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4382.0,
+      "close": 4355
+    },
+    {
+      "code": "372800",
+      "name": "아이티아이즈",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2702.0,
+      "close": 2700
+    },
+    {
+      "code": "373160",
+      "name": "데이원컴퍼니",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2536.0,
+      "close": 2480
+    },
+    {
+      "code": "376180",
+      "name": "피코그램",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1046.0,
+      "close": 1023
+    },
+    {
+      "code": "376270",
+      "name": "HEM파마",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 22395.0,
+      "close": 21850
+    },
+    {
+      "code": "377330",
+      "name": "이지트로닉스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2175.0,
+      "close": 2110
+    },
+    {
+      "code": "378800",
+      "name": "샤페론",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2079.0,
+      "close": 2055
+    },
+    {
+      "code": "383800",
+      "name": "LX홀딩스",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 7361.0,
+      "close": 7270
+    },
+    {
+      "code": "388210",
+      "name": "씨엠티엑스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 40984.0,
+      "close": 32800
+    },
+    {
+      "code": "391710",
+      "name": "코닉오토메이션",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 907.0,
+      "close": 890
+    },
+    {
+      "code": "395400",
+      "name": "SK리츠",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 4782.0,
+      "close": 4580
+    },
+    {
+      "code": "396270",
+      "name": "넥스트칩",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1494.0,
+      "close": 1487
+    },
+    {
+      "code": "399720",
+      "name": "가온칩스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 29978.0,
+      "close": 29800
+    },
+    {
+      "code": "400760",
+      "name": "NH올원리츠",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 2354.0,
+      "close": 2265
+    },
+    {
+      "code": "404990",
+      "name": "신한서부티엔디리츠",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 3561.0,
+      "close": 3375
+    },
+    {
+      "code": "408900",
+      "name": "스튜디오미르",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 777.0,
+      "close": 771
+    },
+    {
+      "code": "408920",
+      "name": "메쎄이상",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2681.0,
+      "close": 2615
+    },
+    {
+      "code": "417970",
+      "name": "모델솔루션",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 8832.0,
+      "close": 8650
+    },
+    {
+      "code": "424960",
+      "name": "스마트레이더시스템",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2636.0,
+      "close": 2550
+    },
+    {
+      "code": "429270",
+      "name": "시지트로닉스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2306.0,
+      "close": 2220
+    },
+    {
+      "code": "432430",
+      "name": "와이랩",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1598.0,
+      "close": 1593
+    },
+    {
+      "code": "438700",
+      "name": "버넥트",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1532.0,
+      "close": 1407
+    },
+    {
+      "code": "440290",
+      "name": "HB인베스트먼트",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1549.0,
+      "close": 1527
+    },
+    {
+      "code": "444530",
+      "name": "심플랫폼",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3186.0,
+      "close": 3185
+    },
+    {
+      "code": "448710",
+      "name": "코츠테크놀로지",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 9250.0,
+      "close": 9160
+    },
+    {
+      "code": "448730",
+      "name": "삼성FN리츠",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 4622.0,
+      "close": 4500
+    },
+    {
+      "code": "450520",
+      "name": "인스웨이브",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1465.0,
+      "close": 1429
+    },
+    {
+      "code": "451250",
+      "name": "삐아",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 6227.0,
+      "close": 6220
+    },
+    {
+      "code": "451800",
+      "name": "한화리츠",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 4536.0,
+      "close": 4500
+    },
+    {
+      "code": "452400",
+      "name": "이닉스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 4297.0,
+      "close": 4290
+    },
+    {
+      "code": "457550",
+      "name": "우진엔텍",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 7116.0,
+      "close": 6890
+    },
+    {
+      "code": "457600",
+      "name": "벡트로보틱스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1920.0,
+      "close": 1779
+    },
+    {
+      "code": "458650",
+      "name": "성우",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 6448.0,
+      "close": 6250
+    },
+    {
+      "code": "460870",
+      "name": "에스엠씨지",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2355.0,
+      "close": 2325
+    },
+    {
+      "code": "462310",
+      "name": "뉴키즈온",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3091.0,
+      "close": 2845
+    },
+    {
+      "code": "463480",
+      "name": "모티브링크",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 2898.0,
+      "close": 2890
+    },
+    {
+      "code": "471820",
+      "name": "셀로맥스사이언스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 3823.0,
+      "close": 3805
+    },
+    {
+      "code": "481070",
+      "name": "에이유브랜즈",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 10366.0,
+      "close": 10230
+    },
+    {
+      "code": "499790",
+      "name": "GS피앤엘",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 28198.0,
+      "close": 24100
+    },
+    {
+      "code": "950130",
+      "name": "엑세스바이오",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 1769.0,
+      "close": 1746
+    },
+    {
+      "code": "950140",
+      "name": "잉글우드랩",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "lower_band": 6409.0,
+      "close": 6180
+    },
+    {
+      "code": "950210",
+      "name": "프레스티지바이오파마",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "lower_band": 3941.0,
+      "close": 3875
+    }
+  ],
+  "C": [
+    {
+      "code": "002020",
+      "name": "코오롱",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 29.6,
+      "macd_hist": 107.7815,
+      "close": 18780
+    },
+    {
+      "code": "002025",
+      "name": "코오롱우",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 25.0,
+      "macd_hist": 84.9344,
+      "close": 10910
+    },
+    {
+      "code": "002210",
+      "name": "동성제약",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 15.1,
+      "macd_hist": -26.7933,
+      "close": 1113
+    },
+    {
+      "code": "004170",
+      "name": "신세계",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 29.1,
+      "macd_hist": -22658.6436,
+      "close": 240500
+    },
+    {
+      "code": "005380",
+      "name": "현대차",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 29.3,
+      "macd_hist": -11343.565,
+      "close": 266500
+    },
+    {
+      "code": "005385",
+      "name": "현대차우",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 23.9,
+      "macd_hist": -2849.9211,
+      "close": 143000
+    },
+    {
+      "code": "005387",
+      "name": "현대차2우B",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 25.8,
+      "macd_hist": -2379.8493,
+      "close": 146800
+    },
+    {
+      "code": "005740",
+      "name": "크라운해태홀딩스",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 29.3,
+      "macd_hist": -45.3421,
+      "close": 4795
+    },
+    {
+      "code": "006050",
+      "name": "국영지앤엠",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 23.2,
+      "macd_hist": 63.8611,
+      "close": 2500
+    },
+    {
+      "code": "006800",
+      "name": "미래에셋증권",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 27.7,
+      "macd_hist": -923.8353,
+      "close": 21600
+    },
+    {
+      "code": "006890",
+      "name": "태경케미컬",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 27.2,
+      "macd_hist": 5.0171,
+      "close": 4340
+    },
+    {
+      "code": "007720",
+      "name": "소노스퀘어",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 23.0,
+      "macd_hist": 31.0546,
+      "close": 1025
+    },
+    {
+      "code": "009540",
+      "name": "HD한국조선해양",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 29.9,
+      "macd_hist": -10457.8568,
+      "close": 238000
+    },
+    {
+      "code": "010140",
+      "name": "삼성중공업",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 27.9,
+      "macd_hist": -291.4028,
+      "close": 16560
+    },
+    {
+      "code": "013890",
+      "name": "지누스",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 29.9,
+      "macd_hist": -10.0479,
+      "close": 6180
+    },
+    {
+      "code": "019680",
+      "name": "대교",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 26.5,
+      "macd_hist": 10.3966,
+      "close": 1474
+    },
+    {
+      "code": "024830",
+      "name": "세원물산",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 29.8,
+      "macd_hist": 18.2032,
+      "close": 8000
+    },
+    {
+      "code": "024890",
+      "name": "대원화성",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 23.9,
+      "macd_hist": 9.2617,
+      "close": 1365
+    },
+    {
+      "code": "025540",
+      "name": "한국단자",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 27.1,
+      "macd_hist": -350.0416,
+      "close": 50300
+    },
+    {
+      "code": "027830",
+      "name": "대성창투",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 22.0,
+      "macd_hist": -13.2486,
+      "close": 3200
+    },
+    {
+      "code": "032350",
+      "name": "롯데관광개발",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 29.7,
+      "macd_hist": 56.5544,
+      "close": 10060
+    },
+    {
+      "code": "036420",
+      "name": "콘텐트리중앙",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 28.3,
+      "macd_hist": 165.4011,
+      "close": 1639
+    },
+    {
+      "code": "044480",
+      "name": "빌리언스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 28.5,
+      "macd_hist": -8.3518,
+      "close": 2545
+    },
+    {
+      "code": "054410",
+      "name": "케이피티유",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 23.5,
+      "macd_hist": -148.3198,
+      "close": 2000
+    },
+    {
+      "code": "061250",
+      "name": "화일약품",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 28.7,
+      "macd_hist": -192.009,
+      "close": 5410
+    },
+    {
+      "code": "065150",
+      "name": "대산F&B",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 16.8,
+      "macd_hist": -2.8252,
+      "close": 1098
+    },
+    {
+      "code": "065500",
+      "name": "오리엔트정공",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 26.5,
+      "macd_hist": 17.0723,
+      "close": 887
+    },
+    {
+      "code": "069410",
+      "name": "엔텔스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 23.2,
+      "macd_hist": -10.8812,
+      "close": 2000
+    },
+    {
+      "code": "070300",
+      "name": "퀀텀레일",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 29.5,
+      "macd_hist": -127.1103,
+      "close": 242
+    },
+    {
+      "code": "071850",
+      "name": "캐스텍코리아",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 29.4,
+      "macd_hist": -6.6893,
+      "close": 1189
+    },
+    {
+      "code": "079000",
+      "name": "와토스코리아",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 30.0,
+      "macd_hist": 49.9411,
+      "close": 3320
+    },
+    {
+      "code": "084680",
+      "name": "이월드",
+      "market": "KOSPI",
+      "is_2020_club": false,
+      "rsi": 25.1,
+      "macd_hist": 116.074,
+      "close": 2130
+    },
+    {
+      "code": "096630",
+      "name": "에스코넥",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 20.4,
+      "macd_hist": 21.3752,
+      "close": 1407
+    },
+    {
+      "code": "102940",
+      "name": "코오롱생명과학",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 24.5,
+      "macd_hist": 687.6727,
+      "close": 12150
+    },
+    {
+      "code": "103230",
+      "name": "에스앤더블류",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 28.9,
+      "macd_hist": -13.3779,
+      "close": 1561
+    },
+    {
+      "code": "106190",
+      "name": "하이텍팜",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 28.4,
+      "macd_hist": -104.7791,
+      "close": 8660
+    },
+    {
+      "code": "136410",
+      "name": "아셈스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 21.6,
+      "macd_hist": 43.5649,
+      "close": 3135
+    },
+    {
+      "code": "141080",
+      "name": "리가켐바이오",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 27.9,
+      "macd_hist": -463.2246,
+      "close": 63200
+    },
+    {
+      "code": "175250",
+      "name": "아이큐어",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 18.4,
+      "macd_hist": -82.3416,
+      "close": 1382
+    },
+    {
+      "code": "179900",
+      "name": "유티아이",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 27.8,
+      "macd_hist": 613.2595,
+      "close": 2255
+    },
+    {
+      "code": "226330",
+      "name": "신테카바이오",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 29.3,
+      "macd_hist": 35.6231,
+      "close": 1005
+    },
+    {
+      "code": "237820",
+      "name": "플레이디",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 23.8,
+      "macd_hist": 25.789,
+      "close": 1996
+    },
+    {
+      "code": "241840",
+      "name": "에이스토리",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 28.0,
+      "macd_hist": 115.168,
+      "close": 2130
+    },
+    {
+      "code": "243070",
+      "name": "휴온스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 27.2,
+      "macd_hist": -545.6831,
+      "close": 15720
+    },
+    {
+      "code": "270520",
+      "name": "앱튼",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 29.7,
+      "macd_hist": -267.3499,
+      "close": 361
+    },
+    {
+      "code": "288980",
+      "name": "모아데이타",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 29.5,
+      "macd_hist": -84.0035,
+      "close": 521
+    },
+    {
+      "code": "298380",
+      "name": "에이비엘바이오",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 24.7,
+      "macd_hist": 917.901,
+      "close": 40450
+    },
+    {
+      "code": "334970",
+      "name": "프레스티지바이오로직스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 25.4,
+      "macd_hist": -15.1581,
+      "close": 1150
+    },
+    {
+      "code": "371950",
+      "name": "풍원정밀",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 29.6,
+      "macd_hist": 125.7836,
+      "close": 2300
+    },
+    {
+      "code": "389650",
+      "name": "넥스트바이오메디컬",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 29.8,
+      "macd_hist": 975.7213,
+      "close": 27650
+    },
+    {
+      "code": "397030",
+      "name": "에이프릴바이오",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 27.4,
+      "macd_hist": 339.0295,
+      "close": 12080
+    },
+    {
+      "code": "453860",
+      "name": "에이에스텍",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 27.7,
+      "macd_hist": 42.7863,
+      "close": 6480
+    },
+    {
+      "code": "475830",
+      "name": "오름테라퓨틱",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 24.6,
+      "macd_hist": -941.8517,
+      "close": 14750
+    },
+    {
+      "code": "900100",
+      "name": "파이온엑스",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 29.5,
+      "macd_hist": 55.9375,
+      "close": 1100
+    },
+    {
+      "code": "950160",
+      "name": "코오롱티슈진",
+      "market": "KOSDAQ",
+      "is_2020_club": false,
+      "rsi": 27.9,
+      "macd_hist": 1071.6425,
+      "close": 12500
+    }
+  ],
+  "scan_date": "2026-11-12",
+  "club_updated": "2026-05-08",
+  "total": 367
+}
